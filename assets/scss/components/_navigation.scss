@@ -1,0 +1,57 @@
+// transparent navigation on darker background
+.l-bg-color {
+    #title-bar-mobile {
+        background-color: transparent;
+    }
+    
+    #top-nav-bar {
+        background-color: $color-1;
+    
+        @include breakpoint(medium) {
+            background-color: transparent;
+        }
+    
+        ul {
+            background-color: $color-1;
+    
+            @include breakpoint(medium) {
+                background-color: transparent;
+            }
+            
+            a {
+                color: $grey-2;
+            }
+    
+            a:active, a:hover {
+                color: scale-color($grey-2, $lightness: -15%);
+            }
+        }
+    }
+}
+
+
+
+// darker navigation on light background
+.l-bg-color-w {
+
+    #title-bar-mobile {
+        background-color: $color-2;
+    }
+    
+    #top-nav-bar {
+        background-color: $color-1;
+    
+        ul {
+            background-color: $color-1;
+    
+            
+            a {
+                color: $grey-2;
+            }
+    
+            a:active, a:hover {
+                color: scale-color($grey-2, $lightness: -15%);
+            }
+        }
+    }
+}

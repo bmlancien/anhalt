@@ -1,0 +1,12 @@
+.button {
+    width: $button-width;
+}
+
+.cta {
+
+    background-color: $color-sec-2!important;
+
+    &:hover {
+        background-color: scale-color($color-sec-2, $lightness: -15%)!important;
+    }
+}

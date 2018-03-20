@@ -1,0 +1,47 @@
+.hp-wrapper {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    
+    @include breakpoint(large) {
+        top: 35%;
+    }
+}
+
+
+.hp {
+    &-header {
+        color: $grey-1;
+    }
+    &-subheader {
+        color: $grey-1;
+        font-weight: $global-weight-light;
+        opacity: .7;
+
+        @include breakpoint(large) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.hp-logo {
+
+    margin: 5rem;
+
+    img {
+        width: 6rem;
+
+        @include breakpoint(large) {
+            width: 10rem;
+        }
+    }
+}
+
+.hp-register {
+    a:link {
+        color: $grey-1;
+    }
+    a:hover, a:active {
+        color: scale-color($grey-1, $lightness: -15%);
+    }
+}
