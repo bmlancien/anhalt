@@ -1,3 +1,20 @@
+$progress-bar-grey: $grey-1;
+$progress-bar-text-grey: $grey-2;
+
+$progress-on: $color-sec-2;
+
+$progress-done: $color-1;
+
+.progress-bg {
+  background-color: $color-2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#progressbar-wrap {
+  z-index: 5;
+}
+
 .progressbar {
   counter-reset: step;
 }
@@ -5,11 +22,11 @@
   list-style-type: none;
   width: 25%;
   float: left;
-  font-size: 12px;
+  font-size: 1rem;
   position: relative;
   text-align: center;
-  text-transform: uppercase;
-  color: #7d7d7d;
+  color: $progress-bar-text-grey;
+  font-weight: $global-weight-normal;
 }
 .progressbar li:before {
   width: 30px;
@@ -17,19 +34,19 @@
   content: counter(step);
   counter-increment: step;
   line-height: 30px;
-  border: 2px solid #7d7d7d;
+  border: 2px solid $progress-bar-grey;
   display: block;
   text-align: center;
   margin: 0 auto 10px auto;
   border-radius: 50%;
-  background-color: white;
+  background-color: $progress-bar-grey;
 }
 .progressbar li:after {
   width: 100%;
   height: 2px;
   content: '';
   position: absolute;
-  background-color: #7d7d7d;
+  background-color: $progress-bar-grey;
   top: 15px;
   left: -50%;
   z-index: -1;
@@ -37,12 +54,18 @@
 .progressbar li:first-child:after {
   content: none;
 }
+.progressbar li.done {
+  color: $progress-done;
+}
+.progressbar li.done:before {
+  border-color: $progress-done;
+}
+.progressbar li.done + li:after {
+  background-color: $progress-done;
+}
 .progressbar li.active {
-  color: green;
+  color: $progress-on;
 }
 .progressbar li.active:before {
-  border-color: #55b776;
-}
-.progressbar li.active + li:after {
-  background-color: #55b776;
+  border-color: $progress-on;
 }

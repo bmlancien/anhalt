@@ -11,6 +11,21 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+// WIZARD START ----------------------------------------------
+
+var mq = window.matchMedia('all and (max-width: 767px)');
+
+if(mq.matches) {
+    let progressBarList = document.querySelectorAll('.progressbar-li');
+      progressBarList[0].innerHTML = '';
+      progressBarList[1].innerHTML = '';
+      progressBarList[2].innerHTML = '';
+      progressBarList[3].innerHTML = '';
+  }
+
+// WIZARD END ----------------------------------------------
+
+
 // NAVIGATION MOBILE START ---------------------------------------------
 let menuHamburger = document.getElementById('menu-hamburger');
 let topNavBar = document.getElementById('top-nav-bar');
@@ -30,6 +45,3 @@ menuHamburger.addEventListener('click', function() {
 });
 // NAVIGATION MOBILE END ---------------------------------------------
 
-// WIZARD START ----------------------------------------------
-
-// WIZARD END ----------------------------------------------
