@@ -1,49 +1,87 @@
 <div class="l-bg-color-w u-vh-100">
 
     <!-- NAVIGATION START -->
-    <div class="title-bar" id="title-bar-mobile" data-responsive-toggle="top-nav-bar" data-hide-for="medium">
-      <button class="menu-icon" type="button" id="menu-hamburger" data-toggle="top-nav-bar"></button>
-      <div class="title-bar-title"></div>
+    <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
+
+      <ul class="vertical menu">
+        <li class="off-canvas-menu-item"><a href="index.html">Startseite</a></li>
+        <li><a href="#">Neues Szenario</a></li>
+        <li><a href="#">Gespeicherte Szenarien</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Impressum</a></li>
+      </ul>
+      <ul class="vertical menu">
+        <li class="off-canvas-menu-item">
+          <div class="grid-x">
+            <div class="cell menu-login">
+              <a href="about.html" class="button button--transparent">Einloggen</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="vertical menu" data-accordion-menu>
+        <li><a href="#">ÜBER DAS TOOL</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Datenquellen</a></li>
+            <li><a href="#">Über das Institut</a></li>
+           </ul>
+        </li>
+      </ul>
+      <ul class="vertical menu" data-accordion-menu>
+        <li><a href="#">FÜR DEVELOPERS</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Lizenz</a></li>
+            <li><a href="#">Github</a></li>
+           </ul>
+        </li>
+      </ul>
     </div>
-  
-    <div class="top-bar top-bar--transparent" id="top-nav-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-          <li><a href="#">Homepage</a></li>
-          <li><a href="#">Neues Szenario berechnen</a></li>
-          <li><a href="#">Gespeicherte Szenarien</a></li>
+
+    
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="nav-bar">
+          <div class="nav-bar-left">
+            <a class="nav-bar-logo" href="index.html">Startseite</a>
+          </div>
+          <div class="nav-bar-right">
+            <ul class="menu">
+              <li class="hide-for-small-only">
+                <a href="#">Einloggen</a>
+              </li>
+              <li>
+                <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+                  <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+        </div>
+      </div>
+     </div>      
+    <!-- NAVIGATION END -->
+
+    <!-- WIZARD START -->
+    <div class="grid-x">
+      <div class="cell">
+        <ul class="progressbar">
+          <li class="active">login</li>
+          <li>choose interest</li>
+          <li>add friends</li>
+          <li>View map</li>
         </ul>
       </div>
     </div>
-    <!-- NAVIGATION END -->
+    <!-- WIZARD END -->  
+  
+    <div class="grid-x">
+      <div class="cell">
 
-    <!-- BREADCRUMBS START -->
-    <ul class="pagination-pointed pagination text-center" role="navigation" aria-label="Pagination">
-      <li class="current"><span class="show-for-sr">Sie sind auf der Seite...</span> 1</li>
-      <li><a class="pagination-pointed-button" href="#" aria-label="Seite 2">2</a></li>
-      <li><a class="pagination-pointed-button" href="#" aria-label="Seite 3">3</a></li>
-      <li><a class="pagination-pointed-button" href="#" aria-label="Seite 4">4</a></li>
-    </ul>
-    <!-- BREADCRUMBS END -->  
-  
-    <div class="grid-container hp-wrapper">
-      <div class="grid-x">
-  
       </div>
     </div>
-  
-    <footer>
-      <div class="grid-x">
-        <div class="cell medium-6 u-block-center">
-          <ul class="u-text-center" id="footer-links">
-            <li><a>Kontakt</a></li>
-            <li><a>Impressum</a></li>
-            <li>Reiner Lemoine Institut</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  
   
   </div>
   

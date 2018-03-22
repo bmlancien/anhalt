@@ -11,8 +11,7 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-// Navigation mobile
-
+// NAVIGATION MOBILE START ---------------------------------------------
 let menuHamburger = document.getElementById('menu-hamburger');
 let topNavBar = document.getElementById('top-nav-bar');
 let titleBarMobile = document.getElementById('title-bar-mobile');
@@ -29,3 +28,8 @@ menuHamburger.addEventListener('click', function() {
         titleBarMobile.style.backgroundColor = '#002E4F';
     }
 });
+// NAVIGATION MOBILE END ---------------------------------------------
+
+// WIZARD START ----------------------------------------------
+
+// WIZARD END ----------------------------------------------

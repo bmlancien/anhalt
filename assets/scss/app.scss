@@ -9,11 +9,11 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import 'components/breadcrumb';
 @import 'components/buttons';
 @import 'components/footer';
 @import 'components/navigation';
 @import 'components/home';
+@import 'components/wizard';
 
 @include foundation-global-styles;
 // @include foundation-grid;
