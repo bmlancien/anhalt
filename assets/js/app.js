@@ -16,20 +16,20 @@ $(document).foundation();
 var mq = window.matchMedia('all and (max-width: 767px)');
 
 if(mq.matches) {
-    let progressBarList = document.querySelectorAll('.progressbar-li');
-      progressBarList[0].innerHTML = '';
-      progressBarList[1].innerHTML = '';
-      progressBarList[2].innerHTML = '';
-      progressBarList[3].innerHTML = '';
-  }
+    var progressBarList = document.querySelectorAll('.progressbar-li');
+        progressBarList[0].innerHTML = '';
+        progressBarList[1].innerHTML = '';
+        progressBarList[2].innerHTML = '';
+        progressBarList[3].innerHTML = '';
+}
 
 // WIZARD END ----------------------------------------------
 
 
 // NAVIGATION MOBILE START ---------------------------------------------
-let menuHamburger = document.getElementById('menu-hamburger');
-let topNavBar = document.getElementById('top-nav-bar');
-let titleBarMobile = document.getElementById('title-bar-mobile');
+var menuHamburger = document.getElementById('menu-hamburger');
+var topNavBar = document.getElementById('top-nav-bar');
+var titleBarMobile = document.getElementById('title-bar-mobile');
 
 // after loading
 titleBarMobile.style.backgroundColor = 'transparent';
