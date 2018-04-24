@@ -1,16 +1,18 @@
 #footer-links {
     a {
-        color: $grey-2!important;
+        color: $color-1!important;
     }
     a:hover, a:active {
-        color: scale-color($grey-2, $lightness: -15%)!important;
+        color: scale-color($color-1, $lightness: -25%)!important;
     }
 }
 
 footer {
+    background-color: $grey-1;
     width: 100%;
     position: absolute;
     bottom: 0;
+    padding-top: 1rem;
 
     ul {
         li {

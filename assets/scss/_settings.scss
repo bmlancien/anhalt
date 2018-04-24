@@ -91,7 +91,7 @@ $global-weight-light: 100;
 $global-weight-normal: 400;
 $global-weight-bold: 700;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-menu-padding: .7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -293,7 +293,7 @@ $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1rem,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
@@ -821,7 +821,7 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $color-1;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -848,7 +848,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $color-1;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
