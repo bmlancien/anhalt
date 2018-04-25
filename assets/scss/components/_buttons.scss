@@ -2,22 +2,14 @@
     width: $button-width;
 }
 
-.cta:link, .cta:visited {
-
+.cta {
     color: $black!important;
     background-color: $color-sec-2!important;
-    box-shadow: 3px 5px 15px (0, 0, 0, .2);
-    transition: all 2sec;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
 
     &:hover {
+        color: $black!important;
         background-color: scale-color($color-sec-2, $lightness: -15%)!important;
-        box-shadow: 1px 10px 8px $black;
-        transform: translateY(-3px);
-    }
-
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: 3px 5px 15px $black;
     }
 }
 
@@ -25,10 +17,15 @@
     &-outline {
         border: 1px solid $grey-1 !important;
         background-color: transparent !important;
+        transition: border .2s ease-in;
 
         &:hover {
             background-color: scale-color($color-1, $lightness: -25%)!important;
-            border: 1px solid scale-color($color-1, $lightness: -25%) !important;
+            border: 1px solid scale-color($grey-1, $lightness: -25%) !important;
         }
+    }
+
+    &-text {
+        font-weight: 400;
     }
 }

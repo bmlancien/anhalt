@@ -1,11 +1,11 @@
 .hp-wrapper {
     position: relative;
-    top: 25%;
+    top: 20%;
     transform: translateY(-50%);
     
     @include breakpoint(large) {
         width: 50rem;
-        top: 30%;
+        top: 25%;
     }
 }
 
@@ -19,6 +19,7 @@
         font-weight: $global-weight-light;
         opacity: .7;
         margin-bottom: 2rem;
+        font-size: 1.15rem;
 
         @include breakpoint(large) {
             font-size: 1.5rem;
@@ -27,22 +28,24 @@
     }
 }
 
-.hp-logo {
+#hp-logo-rli {
 
-    img {
+    width: 5rem;
+    padding-top: 1rem;
+    margin-right: 1rem;
+
+    @include breakpoint(large) {
         width: 6rem;
-
-        @include breakpoint(large) {
-            width: 9rem;
-        }
+        padding-top: 2rem;
     }
 }
 
-.hp-register {
-    a:link {
-        color: $grey-1;
-    }
-    a:hover, a:active {
-        color: scale-color($grey-1, $lightness: -15%);
+#hp-logo-bmbf {
+
+    width: 6rem;
+    margin-left: 1rem;
+
+    @include breakpoint(large) {
+        width: 9rem;
     }
 }
