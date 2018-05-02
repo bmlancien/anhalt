@@ -1,12 +1,62 @@
+.scenario-question {
+    margin-top: 25%;
+
+    @include breakpoint(large) {
+        margin-top: 15%;
+    }
+}
+
 .question {
     
     h2 {
         color: #6A8DA6;
-        font-weight: 400;
-        font-size: 2rem;
+        font-weight: 300;
+        font-size: 1.4rem;
 
-        @media screen and (max-width: 39.9375em) {
-            font-size: 1.4rem;
+        @include breakpoint(large) {
+            font-size: 2rem;
         }
+    }
+}
+
+.scenario-icon {
+
+    padding-top: 2rem;
+
+    @include breakpoint(large) {
+        padding-top: 6rem;
+    }
+
+    &-circle {
+        width: 6rem;
+        height: 6rem;
+        padding: 1.3rem;
+        background-color: $color-sec-2;
+        border-radius: 100px;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+        &:hover {
+            background-color: scale-color($color-sec-2, $lightness: -15%)!important;
+        }
+
+        @include breakpoint(large) {
+            width: 8rem;
+            height: 8rem;
+            padding: 1.8rem;
+        }
+    }
+
+    img {
+        height: 3rem;
+
+        @include breakpoint(large) {
+            height: 4rem;;
+        }
+    }
+
+    &-label p {
+        font-weight: 400!important;
+        padding-top: .5rem;
+        letter-spacing: .5px;
     }
 }

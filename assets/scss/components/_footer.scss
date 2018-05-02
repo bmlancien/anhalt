@@ -1,9 +1,21 @@
 footer {
-    background-color: $grey-1;
     width: 100%;
     position: absolute;
     bottom: 0;
     padding-top: 1rem;
+    left: 0;
+
+    &:not(.footer-hp) {
+        padding-bottom: 1rem;
+
+        @include breakpoint(large) {
+            padding-bottom: 2rem;
+        }
+    }
+
+    .light-bg {
+        background-color: $grey-1;
+    }
 
     ul {
         li {
