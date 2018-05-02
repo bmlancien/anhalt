@@ -18,10 +18,10 @@ $offcanvas-padding: 20px;
   }
 
   li {
-     background: $nav-background;
+    background-color: transparent;
 
-     @media screen and (max-width: 39.9375em) {
-      background-color: transparent;
+    @include breakpoint(large) {
+      background: $nav-background;
     }
   }
 
@@ -77,50 +77,35 @@ $offcanvas-padding: 20px;
     margin-bottom: 1rem;
   }
 
+  li {
+    position: relative;
+  }
+
   .menu a {
-    color: rgba($nav-text-color,.6);
+    color: $nav-text-color;
     padding-top: 7px;
     padding-bottom: 7px;
     transition: color 0.2s ease-in;
 
     &:hover {
-      color: $nav-text-color;
+      color: lighten($color-1, 20%);
     }
   }
 
-  .fa {
-    color: $nav-text-color;
+  .menu-li-icon {
+    display: inline-block;
+    text-align: center;
+    width: 3rem;
   }
 
-  .is-accordion-submenu-parent > a::after {
-    border-color: rgba($nav-text-color,.6) transparent transparent;
+  .menu-li-link {
+    position: absolute;
+    left: 3rem;
+    top: .8rem;
   }
 
-  .social-links {
-    margin-left: $offcanvas-padding;
-
-    li {
-      margin-right: 5px;
-    }
-
-    a:hover .fa {
-      color: darken($nav-text-color,25%);
-      transition: color .2s ease-in;
-    }
-
-    .fa {
-      font-size: 2.2rem;
-    }
-  }
-}
-
-.body-info {
-  text-align: center;
-  color: $nav-background;
-
-  .button {
-    margin: 1rem 0;
-    padding: 0.85em 2em;
+  .menu-li-btn {
+    vertical-align: 3px;
   }
 }
 
@@ -153,7 +138,11 @@ $offcanvas-padding: 20px;
 }
 
 .multilevel-offcanvas .menu li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 39.9375em) {
+    margin-bottom: 1.3rem;
+  }
 }
 
 // For HP
@@ -182,7 +171,7 @@ $offcanvas-padding: 20px;
   }
 }
 
-// Page title
+// Navigation header
 .page-title {
   position: absolute;
   width: 100%;

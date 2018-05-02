@@ -14,7 +14,6 @@ p {
 
     a:link {
         color: $grey-1;
-        transition: color .2s ease-in;
 
         &:hover, &:active {
             color: scale-color($grey-1, $lightness: -25%)!important;
@@ -34,5 +33,13 @@ p {
         &:hover, &:active {
             color: scale-color($color-1, $lightness: -25%)!important;
         }
+    }
+}
+
+.anchor-transition {
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: scale-color($grey-1, $lightness: -25%)!important;
     }
 }

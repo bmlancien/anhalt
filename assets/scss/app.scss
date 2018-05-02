@@ -4,18 +4,17 @@
 @import 'components/layouts';
 @import 'components/typography';
 @import 'components/utilities';
-@import 'components/icons';
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
 @import 'components/buttons';
+@import 'components/icons';
 @import 'components/footer';
 @import 'components/navigation';
 @import 'components/home';
 @import 'components/scenario';
-@import 'components/wizard';
 
 @include foundation-global-styles;
 // @include foundation-grid;
