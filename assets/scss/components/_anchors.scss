@@ -1,0 +1,75 @@
+.anchor-text, .anchor-text:visited {
+    color: $color-2;
+    transition: color 0.2s ease-in;
+
+    &:hover, &:active {
+      color: lighten($color-2, 25%);
+    }
+}
+
+.anchor-text__light, .anchor-text__light:visited {
+    color: $grey-1;
+    transition: color 0.2s ease-in;
+
+    &:hover, &:active {
+      color: rgba($grey-1, .5);
+    }
+}
+
+.anchor-text__dark, .anchor-text__dark:visited {
+    color: $color-1;
+    transition: color 0.2s ease-in;
+
+    &:hover, &:active {
+      color: rgba($color-1, .5);
+    }
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    font-family: inherit;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+
+    &__hollow {
+        color: $color-2;
+        border: 1px solid $color-2;
+        transition: color 0.2s ease-in, border-color 0.2s ease-in;
+
+        &:hover {
+            color: lighten($color-2, 25%);
+            border-color: lighten($color-2, 25%);
+        }
+    }
+
+    &__hollow__light {
+        color: $grey-1;
+        border: 1px solid $grey-1;
+        transition: color 0.2s ease-in, border-color 0.2s ease-in;
+    
+        &:hover {
+            color: rgba($grey-1, .5);
+            border-color: rgba($grey-1, .5);
+        }
+    }
+
+    &-cta {
+        color: $black;
+        background-color: $color-sec-2;
+        transition: background-color 0.2s ease-in;
+
+        &:hover {
+            color: $black;
+            background-color: lighten($color-sec-2, 5%);
+        }
+    }
+}
+

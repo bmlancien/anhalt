@@ -11,35 +11,11 @@ p {
     p {
         color: $grey-1;
     }
-
-    a:link {
-        color: $grey-1;
-
-        &:hover, &:active {
-            color: scale-color($grey-1, $lightness: -25%)!important;
-        }
-    }
 }
 
 .l-bg-color-w {
 
     p {
         color: $color-1;
-    }
-
-    a {
-        color: $color-1;
-
-        &:hover, &:active {
-            color: scale-color($color-1, $lightness: -25%)!important;
-        }
-    }
-}
-
-.anchor-transition {
-    transition: color 0.2s ease-in;
-
-    &:hover {
-        color: scale-color($grey-1, $lightness: -25%)!important;
     }
 }
