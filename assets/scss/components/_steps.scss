@@ -1,0 +1,57 @@
+.steps-info {
+
+  &__wrapper {
+    height: 6rem;
+    padding: 1rem;
+
+    @include breakpoint(medium) {
+      height: 8rem;
+      padding: 1.5rem;
+    }
+
+    @include breakpoint(large) {
+      height: calc(100vh - 40px);
+      padding: 2rem;
+    }
+  }
+}
+
+.steps-tasks {
+
+  &__wrapper {
+    padding: 1rem;
+
+    @include breakpoint(medium) {
+      padding: 1.5rem;
+    }
+
+    @include breakpoint(large) {
+      padding: 2rem;
+    }
+  }
+}
+
+// WIZARD
+$wizard-circular-color: $color-sec-2;
+$wizard-circular-border-thickness: 2px;
+
+.wizard {
+  li {
+    display: inline-block;
+    color: $grey-1;
+    width: 2.2rem;
+    font-size: 14px;
+
+    @include breakpoint(medium) {
+      width: 2.7rem;
+      font-size: 18px;
+    }
+  }
+}
+
+.wizard-circular li.current {
+  border: $wizard-circular-border-thickness solid $wizard-circular-color;
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+}
+

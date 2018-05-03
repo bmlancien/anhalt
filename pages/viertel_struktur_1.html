@@ -1,4 +1,4 @@
-<div class="l-bg-color u-vh--100">
+<div class="u-vh--100">
 
     <!-- MAIN NAVIGATION START -->
     <nav>
@@ -66,7 +66,7 @@
         
       <div class="off-canvas-content" data-off-canvas-content>
         <div class="page-title">
-          <p>Szenario erstellen</p>
+          <p>Viertel erstellen</p>
         </div>
         <div class="nav-bar">
           <div class="nav-bar-left">
@@ -94,47 +94,36 @@
     </nav>
     <!-- MAIN NAVIGATION END -->
       
-    <div class="grid-container">
+    <div class="grid-container fluid u-no-padding">
+      <div class="grid-x">
 
-      <section class="scenario__wrapper">
-        <div class="grid-x">
-          <div class="cell medium-8 large-6 u-text--center u-block--center scenario__question">
-            <h2>Welches Szenario möchten Sie erstellen?</h2>
-          </div>
+        <!-- STEPS INFO START -->
+        <div class="cell large-4 l-bg-color steps-info__wrapper u-text--center u-block--center">
+          <ul class="wizard wizard-circular" role="steps" aria-label="Steps">
+            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
         </div>
-  
-        <div class="grid-x u-block--center">
-          <div class="cell medium-4 medium-offset-2 u-text--center scenario__icon">
-            <a href="#">
-              <div class="scenario__icon-circle u-block--center">
-                <img src="../assets/img/icons_custom/Enavi_Einzelhaus.svg">  
-              </div>
-              <div class="scenario__icon-label">
-                <p><span data-tooltip tabindex="1" title="Sie können Ergebnisse für einen einzigen Einzelhaushalt erhalten" data-position="bottom" data-alignment="center">Einzelhaus</span></p>
-              </div>
-            </a>
-          </div>
-          <div class="cell medium-4 u-text--center scenario__icon">
-            <a href="viertel_struktur_1.html">
-              <div class="scenario__icon-circle u-block--center">
-                <img src="../assets/img/icons_custom/Enavi_Viertel.svg">  
-              </div>
-              <div class="scenario__icon-label">
-                <p><span data-tooltip tabindex="1" title="Sie können Ergebnisse für einen gesamten Quartier, was eine Zusammensetzung aus mehreren Haushalten (wie viele?) ist" data-position="bottom" data-alignment="center">Viertel</span></p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      
-      <footer>
-        <div class="grid-x">
-          <div class="cell u-text--center">
-            <a href="index.html"><span class="anchor-text"><i class ="icon ion-close icon--small"></i>Abbrechen</span></a>
-          </div>
-        </div>
-      </footer>
+        <!-- STEPS INFO END -->
 
+        <!-- STEPS TASKS START -->
+        <div class="cell large-8 l-bg-color-w steps-tasks__wrapper u-text--center u-block--center">
+          <p>Hello world!</p>
+
+          <footer>
+            <div class="grid-x">
+              <div class="cell large-8 large-offset-4 u-text--center">
+                <a href="index.html"><span class="anchor-text"><i class ="icon ion-close icon--small"></i>Abbrechen</span></a>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+        <!-- STEPS TASKS END -->
+        
+      </div>
     </div>
   </div>
   
