@@ -1,4 +1,4 @@
-.scenario-question {
+.scenario__wrapper {
     margin-top: 25%;
 
     @include breakpoint(large) {
@@ -6,7 +6,7 @@
     }
 }
 
-.question {
+.scenario__question {
     
     h2 {
         color: #6A8DA6;
@@ -19,7 +19,7 @@
     }
 }
 
-.scenario-icon {
+.scenario__icon {
 
     padding-top: 2rem;
 

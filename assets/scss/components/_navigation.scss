@@ -13,7 +13,7 @@ $offcanvas-padding: 20px;
   height: $nav-height;
   margin-bottom: 75px;
 
-  .nav-bar-logo {
+  .nav-bar__logo {
     padding: 1.8rem;
   }
 
@@ -44,7 +44,7 @@ $offcanvas-padding: 20px;
       background-color: transparent;
     }
 
-    .offcanvas-trigger-text {
+    .offcanvas-trigger__text {
       margin-right: 0.25rem;
       margin-top: 0.25rem;
     }
@@ -77,19 +77,19 @@ $offcanvas-padding: 20px;
     padding-bottom: 7px;
   }
 
-  .menu-li-icon {
+  .menu-li__icon {
     display: inline-block;
     text-align: center;
     width: 3rem;
   }
 
-  .menu-li-link {
+  .menu-li__link {
     position: absolute;
     left: 3rem;
     top: .8rem;
   }
 
-  .menu-li-btn {
+  .menu-li__btn {
     vertical-align: 3px;
   }
 }

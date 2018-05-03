@@ -1,4 +1,4 @@
-.hp-wrapper {
+.hp__wrapper {
     position: relative;
     top: 20%;
     transform: translateY(-50%);
@@ -11,10 +11,10 @@
 
 
 .hp {
-    &-header {
+    &__header {
         color: $grey-1;
     }
-    &-subheader {
+    &__subheader {
         color: $grey-1;
         font-weight: $global-weight-light;
         opacity: .7;
@@ -27,7 +27,7 @@
         }
     }
 
-    &--btn {
+    &__btn {
 
         .btn {
             width: 15rem;
@@ -35,7 +35,7 @@
     }
 }
 
-#hp-logo-rli {
+#hp__logo-rli {
 
     width: 5rem;
     padding-top: 1rem;
@@ -47,7 +47,7 @@
     }
 }
 
-#hp-logo-bmbf {
+#hp__logo-bmbf {
 
     width: 6rem;
     margin-left: 1rem;

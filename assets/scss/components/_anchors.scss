@@ -7,7 +7,7 @@
     }
 }
 
-.anchor-text__light, .anchor-text__light:visited {
+.anchor-text--light, .anchor-text--light:visited {
     color: $grey-1;
     transition: color 0.2s ease-in;
 
@@ -16,7 +16,7 @@
     }
 }
 
-.anchor-text__dark, .anchor-text__dark:visited {
+.anchor-text--dark, .anchor-text--dark:visited {
     color: $color-1;
     transition: color 0.2s ease-in;
 
@@ -39,7 +39,7 @@
     cursor: pointer;
     font-weight: 400;
 
-    &__hollow {
+    &--hollow {
         color: $color-2;
         border: 1px solid $color-2;
         transition: color 0.2s ease-in, border-color 0.2s ease-in;
@@ -50,7 +50,7 @@
         }
     }
 
-    &__hollow__light {
+    &--hollow--light {
         color: $grey-1;
         border: 1px solid $grey-1;
         transition: color 0.2s ease-in, border-color 0.2s ease-in;
