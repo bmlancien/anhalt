@@ -63,12 +63,14 @@
 
     &-cta {
         color: $black;
+        border: 1px solid $color-sec-2;
         background-color: $color-sec-2;
-        transition: background-color 0.2s ease-in;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
 
         &:hover {
             color: $black;
             background-color: lighten($color-sec-2, 5%);
+            border: 1px solid lighten($color-sec-2, 5%);
         }
     }
 }

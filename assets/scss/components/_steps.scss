@@ -77,11 +77,52 @@
       padding: 2rem;
     }
   }
+
+  &__btn {
+    bottom: 0;
+    margin-top: 1.5rem;
+
+    @include breakpoint(medium) {
+      position: fixed;
+      width: 94%;
+    }
+
+    @include breakpoint(large) {
+      width: 62%;
+    }
+
+    .btn-left, .btn-right {
+      margin: 0 auto;
+
+      a {
+        width: 10rem;
+      }
+    }
+
+    @include breakpoint(medium) {
+      .btn-left {
+        margin: 0 1rem 0 auto;
+      }
+  
+      .btn-right {
+        margin: 0 auto 0 1rem;
+      } 
+    }
+  }
 }
 
-.steps-btn {
-  position: relative;
-  bottom: 3rem;
+.steps-bg {
+  background-color: $grey-1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.steps-gradient {
+  @include breakpoint(medium) {
+    height: 4rem;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), $grey-1);
+  }
 }
 
 // WIZARD

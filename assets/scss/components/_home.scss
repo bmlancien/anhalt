@@ -1,11 +1,11 @@
 .hp__wrapper {
     position: relative;
-    top: 20%;
+    top: 30%;
     transform: translateY(-50%);
     
     @include breakpoint(large) {
         width: 50rem;
-        top: 25%;
+        top: 35%;
     }
 }
 
