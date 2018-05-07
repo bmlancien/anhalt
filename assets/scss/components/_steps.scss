@@ -1,17 +1,63 @@
 .steps-info {
+  position: relative;
+  top: -40px;
+  z-index: -10;
 
   &__wrapper {
-    height: 6rem;
+    height: 9rem;
     padding: 1rem;
 
     @include breakpoint(medium) {
-      height: 8rem;
+      height: 10rem;
       padding: 1.5rem;
     }
 
     @include breakpoint(large) {
-      height: calc(100vh - 40px);
+      height: 100vh;
       padding: 2rem;
+    }
+  }
+
+  &__description {
+    color: $grey-1;
+
+    @include breakpoint(large) {
+      margin-top: 7rem;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+
+    @include breakpoint(large) {
+      display: block;
+    }
+  }
+
+  &__icon img {
+    width: 2rem;
+    margin-right: 1rem;
+    vertical-align: -.5rem;
+
+    @include breakpoint(large) {
+      width: 4rem;
+      margin: 1.5rem;
+    }
+  }
+
+  &__header {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+
+    @include breakpoint(medium) {
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint(large) {
+      display: block;
+      font-size: 1.5rem;
     }
   }
 }
@@ -36,6 +82,12 @@ $wizard-circular-color: $color-sec-2;
 $wizard-circular-border-thickness: 2px;
 
 .wizard {
+  margin-top: 2rem;
+
+  @include breakpoint(large) {
+    margin-top: 3rem;
+  }
+
   li {
     display: inline-block;
     color: $grey-1;

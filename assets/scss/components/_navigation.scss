@@ -5,6 +5,10 @@ $nav-background: $black;
 $nav-background-hp: $color-1;
 $offcanvas-padding: 20px;
 
+nav {
+  z-index: 5555;;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
