@@ -1,7 +1,4 @@
 .steps-info {
-  position: relative;
-  top: -40px;
-  z-index: -10;
 
   &__wrapper {
     height: 9rem;
@@ -13,8 +10,11 @@
     }
 
     @include breakpoint(large) {
-      height: 100vh;
       padding: 2rem;
+      position: fixed;
+      top: 0;
+      height: calc(100vh + 40px);
+      z-index: -1;
     }
   }
 
@@ -50,6 +50,7 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
+    letter-spacing: 1px;
 
     @include breakpoint(medium) {
       font-size: 1.2rem;
@@ -72,9 +73,15 @@
     }
 
     @include breakpoint(large) {
+      margin-top: 3rem;
       padding: 2rem;
     }
   }
+}
+
+.steps-btn {
+  position: relative;
+  bottom: 3rem;
 }
 
 // WIZARD
