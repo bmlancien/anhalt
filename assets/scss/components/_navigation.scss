@@ -167,8 +167,10 @@ nav {
   text-align: center;
   color: $grey-1;
 
-  p {
+  h2 {
     padding-top: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 
     @media screen and (max-width: 39.9375em) {
       padding-top: .3rem;
