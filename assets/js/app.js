@@ -10,3 +10,21 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+// Makes btn div position fixed or relative according to the window and form div height
+// START
+function compareHeight() {
+  let windowHeight = $( window ).height();
+  let windowWidth = $( window ).width();
+  let formHeight = $( '.steps-tasks__form' ).height();
+
+  if (windowHeight <= formHeight - 200 && windowWidth >= 1024 || windowHeight - 300 <= formHeight && windowWidth >= 640 && windowWidth < 1024) {
+    $( '.steps-tasks__btn' ).css({ 'position': 'relative', 'width': '100%' });
+  }
+}
+
+compareHeight();
+// END 
+
+
+
