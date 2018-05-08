@@ -80,22 +80,28 @@
 
   &__btn {
     bottom: 0;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    position: fixed;
 
-    @include breakpoint(medium) {
-      position: fixed;
-      width: 94%;
+    @include breakpoint(small only) {
+      width: calc(100% - 32px) !important;
     }
 
-    @include breakpoint(large) {
-      width: 62%;
+    @include breakpoint(medium) {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .btn-left, .btn-right {
       margin: 0 auto;
 
       a {
-        width: 10rem;
+        width: 8rem;
+
+        @include breakpoint(medium) {
+          width: 10rem;
+        }
       }
     }
 
@@ -106,22 +112,8 @@
   
       .btn-right {
         margin: 0 auto 0 1rem;
-      } 
+      }
     }
-  }
-}
-
-.steps-bg {
-  background-color: $grey-1;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.steps-gradient {
-  @include breakpoint(medium) {
-    height: 4rem;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(255,0,0,0), $grey-1);
   }
 }
 

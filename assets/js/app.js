@@ -18,7 +18,10 @@ function compareHeight() {
   let windowWidth = $( window ).width();
   let formHeight = $( '.steps-tasks__form' ).height();
 
-  if (windowHeight <= formHeight - 200 && windowWidth >= 1024 || windowHeight - 300 <= formHeight && windowWidth >= 640 && windowWidth < 1024) {
+  console.log(windowHeight);
+  console.log(formHeight);
+
+  if (windowHeight <= formHeight - 200 && windowWidth >= 1024 || windowHeight - 300 <= formHeight && windowWidth >= 640 && windowWidth < 1024 || windowHeight - 300 <= formHeight && windowWidth < 640) {
     $( '.steps-tasks__btn' ).css({ 'position': 'relative', 'width': '100%' });
   }
 }
