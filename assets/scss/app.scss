@@ -15,7 +15,9 @@
 @import 'components/navigation';
 @import 'components/home';
 @import 'components/scenario';
+@import 'components/scenario-creation';
 @import 'components/steps';
+@import 'components/wizard';
 
 @include foundation-global-styles;
 // @include foundation-grid;

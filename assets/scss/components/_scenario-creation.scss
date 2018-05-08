@@ -1,6 +1,6 @@
-.steps-info {
+.scen-create {
 
-  &__wrapper {
+  &__info {
     height: 9rem;
     padding: 1rem;
 
@@ -63,7 +63,7 @@
   }
 }
 
-.steps-tasks {
+.scen-create {
 
   &__wrapper {
     padding: 1rem;
@@ -83,6 +83,7 @@
     margin-top: 1rem;
     margin-bottom: .5rem;
     position: fixed;
+    z-index: -1;
 
     @include breakpoint(small only) {
       width: calc(100% - 32px) !important;
@@ -116,34 +117,3 @@
     }
   }
 }
-
-// WIZARD
-$wizard-circular-color: $color-sec-2;
-$wizard-circular-border-thickness: 2px;
-
-.wizard {
-  margin-top: 2rem;
-
-  @include breakpoint(large) {
-    margin-top: 3rem;
-  }
-
-  li {
-    display: inline-block;
-    color: $grey-1;
-    width: 2.2rem;
-    font-size: 14px;
-
-    @include breakpoint(medium) {
-      width: 2.7rem;
-      font-size: 18px;
-    }
-  }
-}
-
-.wizard-circular li.current {
-  border: $wizard-circular-border-thickness solid $wizard-circular-color;
-  border-radius: 5000px;
-  padding: 0.285em 0.8em;
-}
-

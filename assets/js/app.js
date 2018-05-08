@@ -16,13 +16,13 @@ $(document).foundation();
 function compareHeight() {
   let windowHeight = $( window ).height();
   let windowWidth = $( window ).width();
-  let formHeight = $( '.steps-tasks__form' ).height();
+  let formHeight = $( '.scen-create__form' ).height();
 
   console.log(windowHeight);
   console.log(formHeight);
 
   if (windowHeight <= formHeight - 200 && windowWidth >= 1024 || windowHeight - 300 <= formHeight && windowWidth >= 640 && windowWidth < 1024 || windowHeight - 300 <= formHeight && windowWidth < 640) {
-    $( '.steps-tasks__btn' ).css({ 'position': 'relative', 'width': '100%' });
+    $( '.scen-create__btn' ).css({ 'position': 'relative', 'width': '100%' });
   }
 }
 
