@@ -1,0 +1,68 @@
+.card-thin {
+
+  background-color: $white;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: .7rem;
+
+  @include breakpoint(medium) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__number {
+    font-weight: 700;
+  }
+
+  img {
+    position: relative;
+    top: -3px;
+    width: 1.4rem;
+  }
+
+  &__text {
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+  &--empty {
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+    box-shadow: none;
+    border: 3px dashed $color-2;
+    color: $color-2;
+    transition: color 0.2s ease-in, border-color 0.2s ease-in;
+
+    &__text {
+      line-height: 72px;
+      font-size: 1.1rem;
+      font-weight: 700;
+
+      @include breakpoint(large) {
+        font-size: 1.3rem;
+      }
+    }
+
+    i {
+      font-size: 2rem;
+      line-height: 72px;
+
+      @include breakpoint(large) {
+        font-size: 3rem;
+      }
+    }
+
+    &:hover {
+      color: $color-sec-1;
+      border-color: $color-sec-1;
+      cursor: pointer;
+    }
+  }
+}

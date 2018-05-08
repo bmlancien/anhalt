@@ -10,13 +10,13 @@
 @import 'motion-ui';
 
 @import 'components/anchors';
+@import 'components/cards';
 @import 'components/icons';
 @import 'components/footer';
 @import 'components/navigation';
 @import 'components/home';
 @import 'components/scenario';
 @import 'components/scenario-creation';
-@import 'components/steps';
 @import 'components/wizard';
 
 @include foundation-global-styles;
