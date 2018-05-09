@@ -30,4 +30,13 @@ compareHeight();
 // END 
 
 
+function onSmallScreen() {
+  let windowWidth = $( window ).width();
+
+  if (windowWidth < 640) {
+    $('#nav-list-vertical').addClass('vertical');
+  }
+}
+
+onSmallScreen();
 
