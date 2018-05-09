@@ -2,19 +2,32 @@
 
   &__info {
     height: 9rem;
-    padding: 1rem;
+    padding: 0;
 
     @include breakpoint(medium) {
       height: 10rem;
-      padding: 1.5rem;
+      padding: 0;
     }
 
     @include breakpoint(large) {
-      padding: 2rem;
+      padding: 4rem 2rem 2rem;
       position: fixed;
       top: 0;
       height: calc(100vh + 40px);
       z-index: -1;
+    }
+
+    h1 {
+      color: $grey-1;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      padding-top: .5rem;
+
+      @include breakpoint(medium) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
     }
   }
 

@@ -3,10 +3,9 @@ $wizard-circular-color: $color-sec-2;
 $wizard-circular-border-thickness: 2px;
 
 .wizard {
-  margin-top: 2rem;
 
   @include breakpoint(large) {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 
   li {
