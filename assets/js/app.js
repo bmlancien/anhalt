@@ -29,7 +29,8 @@ function compareHeight() {
 compareHeight();
 // END 
 
-
+// Only for small screens
+// START
 function onSmallScreen() {
   let windowWidth = $( window ).width();
 
@@ -39,4 +40,4 @@ function onSmallScreen() {
 }
 
 onSmallScreen();
-
+// END

@@ -44,6 +44,7 @@
       line-height: 72px;
       font-size: 1.1rem;
       font-weight: 700;
+      text-align: left;
 
       @include breakpoint(large) {
         font-size: 1.3rem;
