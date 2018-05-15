@@ -41,22 +41,24 @@
     transition: color 0.2s ease-in, border-color 0.2s ease-in;
 
     &__text {
-      line-height: 72px;
+      line-height: 56px;
       font-size: 1.1rem;
       font-weight: 700;
       text-align: left;
 
       @include breakpoint(large) {
         font-size: 1.3rem;
+        line-height: 72px;
       }
     }
 
     i {
       font-size: 2rem;
-      line-height: 72px;
+      line-height: 56px;
 
       @include breakpoint(large) {
         font-size: 3rem;
+        line-height: 72px;
       }
     }
 
