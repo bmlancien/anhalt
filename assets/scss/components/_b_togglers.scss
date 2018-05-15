@@ -1,0 +1,28 @@
+.toggler-btn {
+  border-style: solid;
+  border-width: 2px;
+
+  &--blue {
+    border-color: $color-2;
+
+    &.active {
+      background-color: $white;
+      color: $color-2;
+    }
+
+    &.not-active {
+      background-color: $color-2;
+      color: $white;
+    }
+  }
+
+  &--left {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  &--right {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+}
