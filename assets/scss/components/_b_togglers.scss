@@ -4,16 +4,16 @@
 
   &--blue {
     border-color: $color-2;
+  }
 
-    &.active {
-      background-color: $white;
-      color: $color-2;
-    }
+  .active {
+    background-color: $white;
+    color: $color-2;
+  }
 
-    &.not-active {
-      background-color: $color-2;
-      color: $white;
-    }
+  .not-active {
+    background-color: $color-2;
+    color: $white;
   }
 
   &--left {
