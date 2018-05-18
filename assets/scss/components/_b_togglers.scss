@@ -29,7 +29,6 @@ button[type="button"].toggler-btn--left {
   border-radius: 100px;
 
   @include breakpoint(medium) {
-    width: 49%;
     border-radius: 100px 0 0 100px;
   }
 }
@@ -39,7 +38,6 @@ button[type="button"].toggler-btn--right {
   border-radius: 99px;
 
   @include breakpoint(medium) {
-    width: 49%;
     border-radius: 0 100px 100px 0;
   }
 }
