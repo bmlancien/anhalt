@@ -1,0 +1,35 @@
+.slider {
+
+  border-radius: 100px;
+  
+  &--s {
+    width: 6rem;
+  }
+  
+  &--m {
+    width: 10rem;
+  }
+  
+  &--l {
+    width: 14rem;
+  }
+  
+  &--blue {
+    background-color: rgba($color-2, .4) !important;
+  }
+  
+  .slider-handle {
+    background-color: $white;
+    border-radius: 100px;
+    border: 1px solid $color-2;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  .slider-fill {
+    background-color: $color-2;
+    border-radius: 100px 0 0 100px;
+  }
+}
