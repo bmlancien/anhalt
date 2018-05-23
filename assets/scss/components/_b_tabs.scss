@@ -1,4 +1,3 @@
-
 .tabs-btn {
 
   ul {
@@ -7,8 +6,12 @@
     margin: 0;
 
     li {
-      float: left;
-      width: 50%;
+      width: 100%;
+
+      @include breakpoint(medium) {
+        float: left;
+        width: 50%;
+      }
     }
   }
 
@@ -53,6 +56,4 @@ button[type="button"].tabs-btn--right {
   @include breakpoint(medium) {
     border-radius: 0 100px 100px 0;
   }
-}
-  
-  
+} 

@@ -84,12 +84,12 @@
         }
     }
     
-    [type="submit"].btn-apply {
-        border-radius: 100px!important;
-        width: 8rem;
-        background-color: $color-sec-2;
-        border: none;
-        transition: background-color 0.2s ease-in;
+[type="submit"].btn-apply {
+    border-radius: 100px!important;
+    width: 8rem;
+    background-color: $color-sec-2;
+    border: none;
+    transition: background-color 0.2s ease-in;
     
     &:hover {
         background-color: lighten($color-sec-2, 5%);
@@ -99,4 +99,36 @@
         width: 10rem;
     }
 }
+
+
+[type="submit"].btn-calc {
+    border-radius: 100px!important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $color-sec-1;
+    width: 8rem;
+    background-color: $white;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in, border 0.2s ease-in;
     
+    &:hover {
+        color: $white;
+        background-color: $color-sec-1;
+        border-color: $color-sec-1;
+    }
+
+    @include breakpoint(medium) {
+        width: 10rem;
+    }
+}
+
+// remove outline
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+  
+[contenteditable="true"]:focus {
+  outline: none;
+} 
