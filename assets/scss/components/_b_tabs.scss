@@ -1,4 +1,5 @@
-.toggler-btn {
+
+.tabs-btn {
 
   ul {
     width: 100%;
@@ -11,18 +12,7 @@
     }
   }
 
-  .active {
-    background-color: $color-2;
-    color: $white;
-    font-weight: 700;
-  
-    &:hover, &:active, &:visited, &:focus {
-      background-color: $color-2;
-      cursor: default;
-    }
-  }
-  
-  .not-active, .not-active:focus {
+  button, button:focus {
     background-color: $white;
     color: $color-2;
     font-weight: 700;
@@ -33,9 +23,21 @@
       color: $white;
     }
   }
+  
+  .active {
+    background-color: $color-2;
+    color: $white;
+    font-weight: 700;
+  
+    &:hover, &:active, &:visited, &:focus {
+      background-color: $color-2;
+      color: $white;
+      cursor: default;
+    }
+  }
 }
   
-button[type="button"].toggler-btn--left {
+button[type="button"].tabs-btn--left {
   width: 100%;
   border-radius: 100px;
 
@@ -44,7 +46,7 @@ button[type="button"].toggler-btn--left {
   }
 }
 
-button[type="button"].toggler-btn--right {
+button[type="button"].tabs-btn--right {
   width: 100%;
   border-radius: 99px;
 
