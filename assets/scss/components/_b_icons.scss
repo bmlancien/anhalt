@@ -1,10 +1,18 @@
 .icon {
     font-size: 1.5rem;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
 
     &--small {
         font-size: 1rem;
+    }
+
+    &--medium {
+        font-size: 1.5rem;
+    }
+
+    &--large {
+        font-size: 2rem;
     }
 
     &--light {

@@ -1,12 +1,21 @@
 .card-thin {
-
   background-color: $white;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
-	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: .7rem;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  transition: all .2s ease-in;
+  backface-visibility:hidden;
+
+  &:hover:not(.card-thin--empty) {
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+	  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
 
   @include breakpoint(medium) {
     padding-top: 1.5rem;
@@ -20,13 +29,26 @@
 
   img {
     position: relative;
-    top: -3px;
+    top: -.1875rem;
     width: 1.4rem;
   }
 
   &__text {
+    position: relative;
     text-align: left;
     padding-right: 1rem;
+
+    .icon {
+      color: $color-1;
+      position: absolute;
+      right: -1rem;
+      top: -.4rem;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: lighten($color-1, 20%);
+      }
+    }
   }
 
   &--empty {
@@ -41,24 +63,24 @@
     transition: color 0.2s ease-in, border-color 0.2s ease-in;
 
     &__text {
-      line-height: 56px;
+      line-height: 3.5rem;
       font-size: 1.1rem;
       font-weight: 700;
       text-align: left;
 
       @include breakpoint(large) {
         font-size: 1.3rem;
-        line-height: 72px;
+        line-height: 4.5rem;
       }
     }
 
     i {
       font-size: 2rem;
-      line-height: 56px;
+      line-height: 3.5rem;
 
       @include breakpoint(large) {
         font-size: 3rem;
-        line-height: 72px;
+        line-height: 4.5rem;
       }
     }
 
