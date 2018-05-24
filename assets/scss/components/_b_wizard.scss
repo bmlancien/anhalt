@@ -12,18 +12,18 @@ $wizard-circular-border-thickness: 2px;
     display: inline-block;
     color: $grey-1;
     width: 2.2rem;
-    font-size: 14px;
+    font-size: .875rem;
 
     @include breakpoint(medium) {
       width: 2.7rem;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
 
 .wizard-circular li.current {
   border: $wizard-circular-border-thickness solid $wizard-circular-color;
-  border-radius: 5000px;
+  border-radius: 500px;
   padding: 0.285em 0.8em;
 }
 // WIZARD END
