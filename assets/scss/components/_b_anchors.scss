@@ -73,6 +73,14 @@
             border: 1px solid lighten($color-sec-2, 5%);
         }
     }
+
+    &--medium {
+        width: 12rem;
+    }
+
+    &--large {
+        width: 15rem;
+    }
 }
 
 [type="submit"].btn-submit {
