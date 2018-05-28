@@ -1,0 +1,14 @@
+i {
+
+  &.info-box {
+    transition: color .2s ease-in;
+
+    &:hover {
+      color: lighten($color-1, 15%);
+    }
+  }
+}
+
+span.has-tip--no-border {
+  border-style: none !important;
+}
