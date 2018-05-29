@@ -1,3 +1,6 @@
+$color-slider-costs: $color-sec-2;
+$color-slider-technologies: #34AB6B;
+
 .slider {
 
   border-radius: 100px;
@@ -16,6 +19,26 @@
   
   &--blue {
     background-color: rgba($color-2, .4) !important;
+
+    .slider-fill {
+      background-color: $color-2;
+    }
+  }
+
+  &--costs {
+    background-color: rgba($color-slider-costs, .4) !important;
+
+    .slider-fill {
+      background-color: $color-slider-costs;
+    }
+  }
+
+  &--technologies {
+    background-color: rgba($color-slider-technologies, .4) !important;
+
+    .slider-fill {
+      background-color: $color-slider-technologies;
+    }
   }
   
   .slider-handle {
@@ -29,7 +52,6 @@
   }
 
   .slider-fill {
-    background-color: $color-2;
     border-radius: 100px 0 0 100px;
   }
 }
