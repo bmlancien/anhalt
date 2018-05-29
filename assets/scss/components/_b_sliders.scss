@@ -23,6 +23,10 @@ $color-slider-technologies: #34AB6B;
     .slider-fill {
       background-color: $color-2;
     }
+
+    .slider-handle {
+      border: 1px solid $color-2;
+    }
   }
 
   &--costs {
@@ -30,6 +34,10 @@ $color-slider-technologies: #34AB6B;
 
     .slider-fill {
       background-color: $color-slider-costs;
+    }
+
+    .slider-handle {
+      border: 1px solid $color-slider-costs;
     }
   }
 
@@ -39,12 +47,15 @@ $color-slider-technologies: #34AB6B;
     .slider-fill {
       background-color: $color-slider-technologies;
     }
+
+    .slider-handle {
+      border: 1px solid $color-slider-technologies;
+    }
   }
   
   .slider-handle {
     background-color: $white;
     border-radius: 100px;
-    border: 1px solid $color-2;
 
     &:hover {
       background-color: $white;
