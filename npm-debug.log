@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
 15 verbose pkgid foundation-zurb-template@1.0.0
 16 verbose cwd /home/local/RL-INSTITUT/bryan.lancien/Dokumente/kopernikus_foundation/src
-17 error Linux 4.13.0-43-generic
+17 error Linux 4.13.0-45-generic
 18 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 19 error node v6.11.4
 20 error npm  v3.5.2

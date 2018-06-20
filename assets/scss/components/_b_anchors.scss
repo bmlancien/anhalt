@@ -89,8 +89,17 @@
     
     @include breakpoint(medium) {
         width: 10rem;
-        }
     }
+}
+
+[type="button"].btn-cta {
+    border-radius: 100px!important;
+    width: 8rem;
+    
+    @include breakpoint(medium) {
+        width: 10rem;
+    }
+}
     
 [type="submit"].btn-apply {
     border-radius: 100px!important;
