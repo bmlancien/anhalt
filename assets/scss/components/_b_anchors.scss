@@ -84,7 +84,10 @@
 }
 
 [type="submit"].btn-submit,
+[type="button"].btn-submit,
 [type="submit"].btn-apply, 
+[type="button"].btn-apply, 
+[type="submit"].btn-cta,
 [type="button"].btn-cta {
     border-radius: 100px!important;
     width: 8rem;
@@ -94,7 +97,8 @@
     }
 }
     
-[type="submit"].btn-apply {
+[type="submit"].btn-apply,
+[type="button"].btn-apply {
     background-color: $color-sec-2;
     border: none;
     transition: background-color 0.2s ease-in;
@@ -115,7 +119,8 @@
 }
 
 
-[type="submit"].btn-calc {
+[type="submit"].btn-calc,
+[type="button"].btn-calc {
     border-radius: 100px!important;
     border-style: solid;
     border-width: 1px;
