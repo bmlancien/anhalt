@@ -140,6 +140,14 @@
     }
 }
 
+input[type="text"]:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+    background-color: $grey-3;
+    color: $grey-dark;
+    cursor: default;
+}
+
 // remove outline
 input:focus,
 select:focus,
