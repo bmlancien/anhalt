@@ -152,9 +152,10 @@
     }
 }
 
-input[type="text"]:disabled,
-input[type="button"]:disabled,
-input[type="submit"]:disabled {
+[type="text"]:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled {
+    border: none;
     background-color: $grey-3;
     color: $grey-dark;
     cursor: default;
