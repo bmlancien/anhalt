@@ -124,19 +124,31 @@
     border-radius: 100px!important;
     border-style: solid;
     border-width: 1px;
-    border-color: $color-sec-1;
+    color: $black;
     width: 8rem;
     background-color: $white;
-    transition: color 0.2s ease-in, background-color 0.2s ease-in, border 0.2s ease-in;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
     
     &:hover {
         color: $white;
         background-color: $color-sec-1;
-        border-color: $color-sec-1;
     }
 
     @include breakpoint(medium) {
         width: 10rem;
+    }
+}
+
+[type="submit"].btn-calc-highlighted,
+[type="button"].btn-calc-highlighted {
+    border-color: $color-sec-1;
+    background-color: $color-sec-1;
+    color: $white;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
     }
 }
 
