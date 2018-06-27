@@ -91,3 +91,102 @@
     }
   }
 }
+
+/* --------------------- CARD MEDIUM SIZE --------------------- */
+
+$card-medium-section-height: 3.5rem;
+$card-medium-section-padding: .3rem;
+$card-medium-icon-color: #006494;
+$card-medium-icon-hover-color: lighten(#006494, 15%);
+
+.card-medium {
+
+  .card-divider {
+    background-color: $color-1;
+    color: $grey-1;
+    height: 6rem;
+    padding-top: 1.2rem;
+    font-size: 1.125rem;
+
+    .grid-x {
+      width: 100%;
+    }
+
+    img {
+      height: 1.4rem;
+      padding-right: .5rem;
+    }
+  }
+
+  .card-section {
+    height: $card-medium-section-height;
+    padding-top: $card-medium-section-padding;
+    padding-bottom: 0;
+    text-align: left;
+
+    .card-section__icons {
+      float: right;
+      width: 8rem;
+      text-align: right;
+      height: calc(#{$card-medium-section-height} - (#{$card-medium-section-padding} * 2));
+      line-height: calc(#{$card-medium-section-height} - #{$card-medium-section-padding});
+
+      a {
+        display: inline-block;
+        transition: all .2s ease-in;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+
+      a i {
+        color: $card-medium-icon-color;
+        padding-left: 1rem;
+        padding-right: .3125rem;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: $card-medium-icon-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// Number input + minus/plus
+.card-section__plus-minus {
+  float: left;
+  width: 7rem;
+  text-align: left;
+
+  .icon {
+    padding-left: 0;
+    padding-right: 0;
+    color: $card-medium-icon-color;
+    transition: all .2s ease-in;
+
+    &:hover {
+      color: $card-medium-icon-hover-color;
+    }
+  }
+
+  .input-group-field {
+    text-align: center;
+    margin-top: .15rem;
+
+    &::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      appearance: none;
+    }
+  }
+
+  .button {
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+
+  .button.hollow {
+    border: none;
+  }
+}
