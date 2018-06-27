@@ -96,8 +96,8 @@
 
 $card-medium-section-height: 3.5rem;
 $card-medium-section-padding: .3rem;
-$card-medium-icon-color: #006494;
-$card-medium-icon-hover-color: lighten(#006494, 15%);
+$card-medium-icon-color: $color-2;
+$card-medium-icon-hover-color: lighten(#{$card-medium-icon-color}, 15%);
 
 .card-medium {
 
