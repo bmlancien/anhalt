@@ -152,6 +152,47 @@ $card-medium-icon-hover-color: lighten(#006494, 15%);
       }
     }
   }
+
+  &--empty {
+    width:100%;
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+    box-shadow: none;
+    border: 3px dashed $color-2;
+    color: $color-2;
+    transition: color 0.2s ease-in, border-color 0.2s ease-in;
+
+    &__text {
+      line-height: 3.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: left;
+
+      @include breakpoint(large) {
+        font-size: 1.3rem;
+        line-height: 4.5rem;
+      }
+    }
+
+    i {
+      font-size: 2rem;
+      line-height: 3.5rem;
+
+      @include breakpoint(large) {
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
+    }
+
+    &:hover {
+      color: $color-sec-1;
+      border-color: $color-sec-1;
+      cursor: pointer;
+    }
+  }
 }
 
 // Number input + minus/plus
