@@ -6,26 +6,61 @@ footer {
   left: 0;
 
   &:not(.footer-hp) {
-      padding-bottom: 1rem;
+    padding-bottom: 1rem;
 
-      @include breakpoint(large) {
-          padding-bottom: 2rem;
+    @include breakpoint(large) {
+        padding-bottom: 2rem;
+    }
+  }
+
+  .footer-hp {
+
+    &__logo {
+      text-align: center;
+
+      &--rli {
+        width: 7rem;
+        padding-top: 1rem;
+        margin-right: 1.5rem;
+  
+        @include breakpoint(medium) {
+            padding-top: 1rem;
+        }
       }
+      
+      &--eaa {
+        width: 7rem;
+        padding-top: 1rem;
+        margin-right: 1rem;
+        
+        @include breakpoint(medium) {
+            padding-top: 1rem;
+        }
+      }
+      
+      &--bmbf {
+        width: 8rem;
+    
+        @include breakpoint(medium) {
+            width: 9rem;
+        }
+      }
+    }
   }
 
   ul {
 
     margin: 0 0 .3rem;
 
-      li {
-          display:inline-block;
-          margin: .2rem;
-          font-size: .9rem;
+    li {
+      display:inline-block;
+      margin: .2rem;
+      font-size: .9rem;
 
-          @include breakpoint(large) {
-              margin: 1rem;
-              font-size: 1rem;
-          }
+      @include breakpoint(large) {
+          margin: 1rem;
+          font-size: 1rem;
       }
+    }
   }
 }

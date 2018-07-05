@@ -17,47 +17,26 @@
 
 
 .hp {
-  &__header {
+    &__header {
       color: $grey-1;
-  }
-  &__subheader {
-      color: $grey-1;
-      font-weight: $global-weight-light;
-      opacity: .7;
-      margin-bottom: 2rem;
-      font-size: 1rem;
+    }
+    &__subheader {
+        color: $grey-1;
+        font-weight: $global-weight-light;
+        opacity: .7;
+        margin-bottom: 2rem;
+        font-size: 1rem;
 
-      @include breakpoint(medium) {
-          font-size: 1.5rem;
-          margin-bottom: 3rem;
-      }
-  }
+        @include breakpoint(medium) {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+    }
 
-  &__btn {
+    &__btn {
 
-      .btn {
-          width: 15rem;
-      } 
-  }
-}
-
-#hp__logo-rli {
-
-  width: 5rem;
-  padding-top: 1rem;
-  margin-right: 1rem;
-
-  @include breakpoint(large) {
-      padding-top: 1rem;
-  }
-}
-
-#hp__logo-bmbf {
-
-  width: 6rem;
-  margin-left: 1rem;
-
-  @include breakpoint(large) {
-      width: 7rem;
-  }
+        .btn {
+            width: 15rem;
+        } 
+    }
 }
