@@ -1,0 +1,63 @@
+$bar-bg-color-s: $black;
+$bar-bg-color-m: $color-1;
+$text-color: $grey-1;
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+.top-bar {
+  background-color: $bar-bg-color-s!important;
+  color: $text-color!important;
+
+  @include breakpoint(medium) {
+    background-color: $bar-bg-color-m!important;
+  }
+
+  .menu .menu-text {
+    color: $text-color!important;
+  }
+
+  ul {
+    background-color: $bar-bg-color-s!important;
+
+    @include breakpoint(medium) {
+      background-color: $bar-bg-color-m!important;
+    }
+  }
+}
+
+.title-bar {
+  background-color: $bar-bg-color-s!important;
+
+  @include breakpoint(medium) {
+    background-color: $bar-bg-color-m!important;
+  }
+}
+
+#nav-list-vertical > li.opens-left > a::after {
+  left: 0;
+  border-top-color: rgb(23, 121, 186);
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-right-color: transparent;
+  border-right-style: inset;
+  border-right-width: 6px;
+  border-bottom-color: transparent;
+  border-bottom-style: inset;
+  border-bottom-width: 0;
+  border-left-color: transparent;
+  border-left-style: inset;
+  border-left-width: 6px;
+}
+
