@@ -1,0 +1,63 @@
+.hp__wrapper {
+  position: relative;
+  top: 10vh;
+  
+  @include breakpoint(medium) {
+      top: 15vh;
+  }
+
+  @include breakpoint(large) {
+      width: 50rem;
+  }
+
+  nav {
+      width: 100%;
+  }
+}
+
+
+.hp {
+  &__header {
+      color: $grey-1;
+  }
+  &__subheader {
+      color: $grey-1;
+      font-weight: $global-weight-light;
+      opacity: .7;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+
+      @include breakpoint(medium) {
+          font-size: 1.5rem;
+          margin-bottom: 3rem;
+      }
+  }
+
+  &__btn {
+
+      .btn {
+          width: 15rem;
+      } 
+  }
+}
+
+#hp__logo-rli {
+
+  width: 5rem;
+  padding-top: 1rem;
+  margin-right: 1rem;
+
+  @include breakpoint(large) {
+      padding-top: 1rem;
+  }
+}
+
+#hp__logo-bmbf {
+
+  width: 6rem;
+  margin-left: 1rem;
+
+  @include breakpoint(large) {
+      width: 7rem;
+  }
+}
