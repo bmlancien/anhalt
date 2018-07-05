@@ -1,6 +1,7 @@
 // WIZARD START 
 $wizard-circular-color: $color-sec-2;
 $wizard-circular-border-thickness: 2px;
+$wizard-list-item-color: $grey-1;
 
 .wizard {
 
@@ -10,13 +11,18 @@ $wizard-circular-border-thickness: 2px;
 
   li {
     display: inline-block;
-    color: $grey-1;
+    color: $wizard-list-item-color;
     width: 2.2rem;
     font-size: .875rem;
 
     @include breakpoint(medium) {
       width: 2.7rem;
       font-size: 1.125rem;
+    }
+
+    // for steps that haven't been accomplished
+    &.disabled {
+      opacity: .5;
     }
   }
 }
