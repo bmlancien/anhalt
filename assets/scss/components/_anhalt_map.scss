@@ -1,0 +1,32 @@
+$canvas-top-off: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.scss'
+$map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
+
+.off-canvas-wrapper {
+
+  height: calc(100% - #{$canvas-top-off});
+  background-color: aquamarine;
+
+  p {
+    color: $grey-1;
+  }
+
+  .off-canvas.position-left {
+    top: $canvas-top-off;
+    height: calc(100% - #{$canvas-top-off});
+  }
+}
+
+.off-canvas-content {
+
+  height: 100%;
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+
+    #mapid { 
+      height: calc(100% - #{$map-btm-off});
+    }
+  }
+}

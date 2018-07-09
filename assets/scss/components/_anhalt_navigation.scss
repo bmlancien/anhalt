@@ -1,6 +1,8 @@
 $bar-bg-color-s: $black;
 $bar-bg-color-m: $color-1;
 $text-color: $grey-1;
+$top-bar-height-s: 2.5rem;
+$top-bar-height-m: 2.5rem;
 
 .no-js {
   @include breakpoint(small only) {
@@ -19,9 +21,11 @@ $text-color: $grey-1;
 .top-bar {
   background-color: $bar-bg-color-s!important;
   color: $text-color!important;
+  height: $top-bar-height-s;
 
   @include breakpoint(medium) {
     background-color: $bar-bg-color-m!important;
+    height: $top-bar-height-m;
   }
 
   .menu .menu-text {
