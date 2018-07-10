@@ -33,6 +33,7 @@ $top-bar-height-m: 2.5rem;
   }
 
   ul {
+    z-index: 999999;
     background-color: $bar-bg-color-s!important;
 
     @include breakpoint(medium) {
