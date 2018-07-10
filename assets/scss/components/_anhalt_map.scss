@@ -1,16 +1,22 @@
 $canvas-top-off: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.scss'
 $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
+
+/* CONTENT INSIDE CANVAS START */
 .off-canvas-wrapper {
+  height: calc(100% - #{$canvas-top-off});
 
   .off-canvas {
+    background-color: $grey-1;
+
+    p {
+      color: $color-1;
+    }
 
     &.is-transition-overlap {
     z-index: 999999999;
+    }
   }
-  }
-
-  height: calc(100% - #{$canvas-top-off});
 
   p {
     color: $grey-1;
@@ -22,8 +28,23 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
   }
 }
 
-.off-canvas-content {
+// Tabs
+.off-canvas-wrapper .off-canvas {
 
+  .grid-container {
+    padding: 0;
+
+    .tabs-content {
+      background-color: $grey-1;
+      border: none;
+    }
+  }
+}
+
+/* CONTENT INSIDE CANVAS END */
+
+/* CONTENT OUTSIDE CANVAS START */
+.off-canvas-content {
   height: 100%;
 
   .map-wrapper {
@@ -40,3 +61,4 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
     }
   }
 }
+/* CONTENT OUTSIDE CANVAS END */
