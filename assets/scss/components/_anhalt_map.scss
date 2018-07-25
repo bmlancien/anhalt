@@ -49,6 +49,10 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
     border: none;
   }
 
+  .tabs-title.is-active {
+    background-color: $color-sec-1;
+  }
+
   li a {
     height: 3.125rem;
     padding-top: .8rem;
@@ -60,6 +64,7 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
     @include breakpoint(medium) {
       height: 7.8rem;
+      width: 7.8rem;
       padding-top: 1.8rem;
       text-align: center;
       padding-left: 0;
