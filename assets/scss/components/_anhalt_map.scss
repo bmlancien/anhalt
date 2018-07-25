@@ -51,22 +51,28 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
   li a {
     height: 3.125rem;
-    padding-top: 1.8rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: .8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: $color-1;
     border-bottom: 1px solid $grey-1;
-    text-align: center;
+    text-align: left;
 
     @include breakpoint(medium) {
       height: 7.8rem;
+      padding-top: 1.8rem;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     img {
       height: 1.2rem;
+      float: left;
 
       @include breakpoint(medium) {
         height: 1.875rem;
+        float: none;
       }
     }
 
@@ -74,7 +80,15 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
       font-size: 1rem;
       font-weight: 400;
       color: $grey-1;
-      padding-top: 0.8rem;
+      padding-top: 0;
+      margin-left: 1rem;
+      float: left;
+
+      @include breakpoint(medium) {
+        float: none;
+        padding-top: 0.8rem;
+        margin-left: 0;
+      }
     }
   }
 }
