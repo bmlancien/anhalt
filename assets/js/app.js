@@ -10,3 +10,6 @@ import Foundation from 'foundation-sites';
 import './lib/leaflet-map';
 
 $(document).foundation();
+
+// forces offcanvas to open when page has loaded
+$('#offCanvas').foundation('open');
