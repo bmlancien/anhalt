@@ -49,8 +49,12 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
     border: none;
   }
 
-  .tabs-title.is-active {
-    background-color: $color-sec-1;
+  .tabs-title.is-active a {
+    background-color: $color-2;
+  }
+
+  li:first-child {
+    border-top: 1px solid $grey-1;
   }
 
   li a {
@@ -61,6 +65,7 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
     background-color: $color-1;
     border-bottom: 1px solid $grey-1;
     text-align: left;
+    transition: background-color 0.2s ease-in;
 
     @include breakpoint(medium) {
       height: 7.8rem;
@@ -69,6 +74,10 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
       text-align: center;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    &:hover {
+      background-color: darken($color-1, 8%);
     }
 
     img {
@@ -83,7 +92,7 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
     h2 {
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 700;
       color: $grey-1;
       padding-top: 0;
       margin-left: 1rem;
