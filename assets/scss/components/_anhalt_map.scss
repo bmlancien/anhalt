@@ -39,10 +39,56 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 }
 
 // Tabs
+.off-canvas-wrapper.off-canvas-wrapper--left {
+
+  .off-canvas {
+    background-color: $color-1;
+  }
+
+  .tabs {
+    border: none;
+  }
+
+  li a {
+    height: 3.125rem;
+    padding-top: 1.8rem;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $color-1;
+    border-bottom: 1px solid $grey-1;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      height: 7.8rem;
+    }
+
+    img {
+      height: 1.2rem;
+
+      @include breakpoint(medium) {
+        height: 1.875rem;
+      }
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $grey-1;
+      padding-top: 0.8rem;
+    }
+  }
+}
+
+// Tabs content
 .off-canvas-wrapper .off-canvas {
 
   .grid-container {
     padding: 0;
+
+    .tabs-content__wrapper {
+      min-height: calc(100vh - #{$canvas-top-off-m});
+      background-color: $grey-1;
+    }
 
     .tabs-content {
       background-color: $grey-1;
@@ -53,9 +99,9 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
 /* CONTENT INSIDE CANVAS END */
 
+/* CONTENT OUTSIDE CANVAS START */
 $button-offcanvas-color: $color-1;
 
-/* CONTENT OUTSIDE CANVAS START */
 .off-canvas-content {
   height: 100%;
 
