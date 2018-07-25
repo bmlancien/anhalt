@@ -1,10 +1,16 @@
-$canvas-top-off: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.scss'
+$canvas-top-off-s: 2rem; // same as $top-bar-height-s in '_anhalt_navigation.scss'
+$canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.scss'
 $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
 
 
 /* CONTENT INSIDE CANVAS START */
 .off-canvas-wrapper {
-  height: calc(100% - #{$canvas-top-off});
+  height: calc(100% - #{$canvas-top-off-s});
+
+  @include breakpoint(medium) {
+    height: calc(100% - #{$canvas-top-off-m});
+  }
+  
 
   .off-canvas {
     background-color: $grey-1;
@@ -23,8 +29,13 @@ $map-btm-off: 2rem; // same as $map-content-info-btm in 'anhalt_map_footer.scss'
   }
 
   .off-canvas.position-left {
-    top: $canvas-top-off;
-    height: calc(100% - #{$canvas-top-off});
+    top: $canvas-top-off-s;
+    height: calc(100% - #{$canvas-top-off-s});
+
+    @include breakpoint(medium) {
+      top: $canvas-top-off-m;
+      height: calc(100% - #{$canvas-top-off-m});
+    }
   }
 }
 
