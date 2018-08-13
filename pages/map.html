@@ -12,9 +12,11 @@
       <div class="grid-container">
         <div class="grid-x">
           <div class="cell medium-shrink">
-            <ul class="vertical tabs" data-tabs id="example-tabs">
+
+            <!-- Off-canvas tabs -->
+            <ul class="vertical tabs" data-tabs id="offcanvas-tabs">
               <li class="tabs-title is-active">
-                <a href="#panel1v" aria-selected="true">
+                <a href="#panel-scenario" aria-selected="true">
                   <img src="assets/img/icons_custom/Windrad.svg">
                   <h2>Szenario</h2>
                 </a>
@@ -38,17 +40,34 @@
                 </a>
               </li>
             </ul>
+
           </div>
           <div class="cell medium-auto tabs-content__wrapper">
-            <div class="tabs-content" data-tabs-content="example-tabs">
-              <div class="tabs-panel is-active" id="panel1v">
-                <p>One</p>
-                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+            <div class="tabs-content" data-tabs-content="offcanvas-tabs">
+
+              <!-- First panel content -->
+              <div class="tabs-panel is-active" id="panel-scenario">
+                <form>
+                  <fieldset class="large-5 cell">
+                    <legend>Szenario auswählen 
+                      <span data-tooltip tabindex="1" title="Informationen über den Inhalt">
+                        <i class ="icon ion-information-circled icon--small"></i>
+                      </span>
+                    </legend>
+                    <input type="radio" name="scenario" value="Red" id="scenarioStatusQuo" required><label for="scenarioStatusQuo">Status Quo</label>
+                    <input type="radio" name="scenario" value="Blue" id="scenarioGermany"><label for="scenarioGermany">Deutsches Klimaschutzziel</label>
+                    <input type="radio" name="scenario" value="Yellow" id="scenario100"><label for="scenario100">100% EE in der Region</label>
+                  </fieldset>
+                </form>
               </div>
+
+              <!-- Second panel content -->
               <div class="tabs-panel" id="panel2v">
                 <p>Two</p>
                 <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
               </div>
+
+              <!-- Third panel content -->
               <div class="tabs-panel" id="panel3v">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -62,10 +81,13 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
               </div>
+
+              <!-- Fourth panel content -->
               <div class="tabs-panel" id="panel4v">
                 <p>Four</p>
                 <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
               </div>
+
             </div>
           </div>
         </div>
