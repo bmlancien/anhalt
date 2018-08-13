@@ -1,4 +1,4 @@
-$map-footer-btm: 5rem; // keep same height as height to remove from map --> $map-btm-off in '_anhalt_map.scss'
+$map-footer-btm: 6rem; // keep same height as height to remove from map --> $map-btm-off in '_anhalt_map.scss'
 
 footer.map-footer {
   height: $map-footer-btm;
@@ -9,27 +9,28 @@ footer.map-footer {
   ul.map-footer__legal {
     display: inline-block;
     padding-right: 3rem;
+
+    li {
+      margin-top: .5rem;
+
+      @include breakpoint(medium) {
+        margin-top: 2rem;
+      }
+    }
   }
 
   ul.map-footer__logo {
     display: inline-block;
 
-    li .map-footer__logo {
+    li {
+      margin-top: 0.5rem;
 
-      &-eaa {
-        height: 3rem;
-      }
+      a img {
+        height: 2.5rem;
   
-      &-rli {
-        height: 3rem;
-      }
-  
-      &-kopernikus {
-        height: 3rem;
-      }
-  
-      &-bmbf {
-        height: 3rem;
+        @include breakpoint(medium) {
+          height: 4rem;
+        }
       }
     }
   }
