@@ -1,7 +1,36 @@
-$map-content-info-btm: 2rem;
+$map-footer-btm: 5rem; // keep same height as height to remove from map --> $map-btm-off in '_anhalt_map.scss'
 
-.map-content-info {
-  height: $map-content-info-btm;
+footer.map-footer {
+  height: $map-footer-btm;
   padding: 0;
   width: 100%;
+  text-align: right;
+
+  ul.map-footer__legal {
+    display: inline-block;
+    padding-right: 3rem;
+  }
+
+  ul.map-footer__logo {
+    display: inline-block;
+
+    li .map-footer__logo {
+
+      &-eaa {
+        height: 3rem;
+      }
+  
+      &-rli {
+        height: 3rem;
+      }
+  
+      &-kopernikus {
+        height: 3rem;
+      }
+  
+      &-bmbf {
+        height: 3rem;
+      }
+    }
+  }
 }
