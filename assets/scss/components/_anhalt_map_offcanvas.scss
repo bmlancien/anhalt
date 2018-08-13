@@ -36,6 +36,12 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
 }
 
 // -------------------------------- Tabs -------------------------------------- //
+.off-canvas .offcanvas-tabs__wrapper {
+  @include breakpoint(medium) {
+    width: 7.8125rem;
+  }
+}
+
 .off-canvas-wrapper.off-canvas-wrapper--left {
 
   .off-canvas {
@@ -128,5 +134,39 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   &--highlighted {
     background-color: $grey-2;
     padding: .5rem;
+  }
+}
+
+#panel-energy-system {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  .accordion-title {
+    height: 4rem;
+  }
+
+  .accordion-title--100 {
+    width: 100%;
+  }
+
+  .accordion-item--no-border {
+    border-top: none;
+  }
+}
+
+.tabs-panel .accordion-item .accordion-title {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: $grey-3;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $black;
+
+  &:hover {
+    background-color: darken($grey-3, 10%);
   }
 }

@@ -11,9 +11,9 @@
       
       <div class="grid-container">
         <div class="grid-x">
-          <div class="cell medium-shrink">
 
-            <!-- Off-canvas tabs -->
+          <!-- Off-canvas tabs -->
+          <div class="cell offcanvas-tabs__wrapper">
             <ul class="vertical tabs" data-tabs id="offcanvas-tabs">
               <li class="tabs-title is-active">
                 <a href="#panel-scenario" aria-selected="true">
@@ -22,7 +22,7 @@
                 </a>
               </li>
               <li class="tabs-title">
-                <a href="#panel2v">
+                <a href="#panel-energy-system">
                   <img src="assets/img/icons_custom/Windrad.svg">
                   <h2>Energiesystem</h2>
                 </a>
@@ -40,8 +40,8 @@
                 </a>
               </li>
             </ul>
-
           </div>
+
           <div class="cell medium-auto tabs-content__wrapper">
             <div class="tabs-content" data-tabs-content="offcanvas-tabs">
 
@@ -74,9 +74,29 @@
               </div>
 
               <!-- Second panel content -->
-              <div class="tabs-panel" id="panel2v">
-                <p>Two</p>
-                <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+              <div class="tabs-panel" id="panel-energy-system">
+                <ul class="accordion" data-accordion>
+                  <li class="accordion-item accordion-item--no-border is-active" data-accordion-item>
+                    <a href="#" class="accordion-title accordion-title--100">Stromerzeugung</a>
+                    <div class="accordion-content" data-tab-content >
+                      <p>Panel 1. Lorem ipsum dolor</p>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title accordion-title--100">Wärmeerzeugung</a>
+                    <div class="accordion-content" data-tab-content>
+                      <textarea></textarea>
+                      <button class="button">I do nothing!</button>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title accordion-title--100">Strombedarf</a>
+                    <div class="accordion-content" data-tab-content>
+                      Type your name!
+                      <input type="text"></input>
+                    </div>
+                  </li>
+                </ul>
               </div>
 
               <!-- Third panel content -->
