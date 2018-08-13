@@ -35,7 +35,7 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   }
 }
 
-// Tabs
+// -------------------------------- Tabs -------------------------------------- //
 .off-canvas-wrapper.off-canvas-wrapper--left {
 
   .off-canvas {
@@ -119,5 +119,14 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
       background-color: $grey-1;
       border: none;
     }
+  }
+}
+
+// -------------------------------- Content -------------------------------------- //
+.panel__text {
+
+  &--highlighted {
+    background-color: $grey-2;
+    padding: .5rem;
   }
 }

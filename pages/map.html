@@ -48,17 +48,29 @@
               <!-- First panel content -->
               <div class="tabs-panel is-active" id="panel-scenario">
                 <form>
-                  <fieldset class="large-5 cell">
+                  <fieldset>
                     <legend>Szenario auswählen 
-                      <span data-tooltip tabindex="1" title="Informationen über den Inhalt">
-                        <i class ="icon ion-information-circled icon--small"></i>
-                      </span>
+                      <i class ="icon ion-information-circled icon--small" title="Informationen zum Inhalt"></i>
                     </legend>
-                    <input type="radio" name="scenario" value="Red" id="scenarioStatusQuo" required><label for="scenarioStatusQuo">Status Quo</label>
-                    <input type="radio" name="scenario" value="Blue" id="scenarioGermany"><label for="scenarioGermany">Deutsches Klimaschutzziel</label>
-                    <input type="radio" name="scenario" value="Yellow" id="scenario100"><label for="scenario100">100% EE in der Region</label>
+                    <div>
+                      <input type="radio" name="scenario" value="statusQuo" id="scenarioStatusQuo" required checked>
+                      <label for="scenarioStatusQuo">Status Quo</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="scenario" value="germany" id="scenarioGermany">
+                      <label for="scenarioGermany">Deutsches Klimaschutzziel</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="scenario" value="100" id="scenario100">
+                      <label for="scenario100">100% EE in der Region</label>
+                    </div>
                   </fieldset>
                 </form>
+                <div class="panel__text panel__text--highlighted">
+                  <p id="scenarioPanelText">
+                      <span style="font-weight:700">Status Quo</span><span style="display:inline-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                  </p>
+                </div>
               </div>
 
               <!-- Second panel content -->
