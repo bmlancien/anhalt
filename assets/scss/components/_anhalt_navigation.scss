@@ -19,9 +19,12 @@ $top-bar-height-m: 2.5rem;
 }
 
 .top-bar {
+  position: fixed;
+  width: 100%;
   background-color: $bar-bg-color-s!important;
   color: $text-color!important;
   height: $top-bar-height-s;
+  z-index: 999999999999999999;
 
   @include breakpoint(medium) {
     background-color: $bar-bg-color-m!important;

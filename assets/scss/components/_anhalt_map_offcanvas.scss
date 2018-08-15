@@ -6,6 +6,7 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
 
   @include breakpoint(medium) {
     height: calc(100% - #{$canvas-top-off-m});
+    top: $canvas-top-off-m;
   }
 
   .off-canvas {
@@ -16,7 +17,7 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
     }
 
     &.is-transition-overlap {
-    z-index: 999999999;
+      z-index: 999999999;
     }
   }
 
