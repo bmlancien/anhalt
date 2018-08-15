@@ -2,7 +2,6 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding-top: 1rem;
   left: 0;
 
   &:not(.footer-hp) {
@@ -18,31 +17,41 @@ footer {
     &__logo {
       text-align: center;
 
-      &--rli {
-        width: 7rem;
+      &-eaa {
+        width: 6rem;
         padding-top: 1rem;
         margin-right: 1.5rem;
   
         @include breakpoint(medium) {
-            padding-top: 1rem;
+          padding-top: 1.5rem;
+        }
+      }
+
+      &-rli {
+        width: 5rem;
+        padding-top: 1rem;
+        margin-right: 1.5rem;
+  
+        @include breakpoint(medium) {
+          padding-top: 1.5rem;
         }
       }
       
-      &--eaa {
-        width: 7rem;
+      &-kopernikus {
+        width: 8rem;
         padding-top: 1rem;
         margin-right: 1rem;
         
         @include breakpoint(medium) {
-            padding-top: 1rem;
+          padding-top: .3rem;
         }
       }
       
-      &--bmbf {
-        width: 8rem;
+      &-bmbf {
+        width: 7rem;
     
         @include breakpoint(medium) {
-            width: 9rem;
+          width: 9rem;
         }
       }
     }
