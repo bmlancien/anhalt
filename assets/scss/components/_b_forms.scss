@@ -39,4 +39,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
-/* remove spin buttons */
+/* --------------------- */
+
+.plus-minus-input .input-group-button button {
+  height: 2.4375rem;
+  border: none;
+  padding-left: .2rem;
+  padding-right: .2rem;
+
+  &.plus-minus-input--left, &.plus-minus-input--left i {
+    padding-left: 0;
+  }
+}
