@@ -20,16 +20,22 @@ $wizard-list-item-color: $grey-1;
       font-size: 1.125rem;
     }
 
-    // for steps that haven't been accomplished
-    &.disabled {
+    &.wizard__step {
+
       opacity: .5;
+
+      &.current {
+        border: $wizard-circular-border-thickness solid $wizard-circular-color;
+        border-radius: 500px;
+        padding: 0.285em 0.8em;
+        opacity: 1;
+      }
+
+      &.active {
+        font-weight: 700;
+        opacity: 1;
+      }
     }
   }
-}
-
-.wizard-circular li.current {
-  border: $wizard-circular-border-thickness solid $wizard-circular-color;
-  border-radius: 500px;
-  padding: 0.285em 0.8em;
 }
 // WIZARD END
