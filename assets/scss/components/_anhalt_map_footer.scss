@@ -1,4 +1,4 @@
-$map-footer-btm-m: 8rem; // keep same height as height to remove from map --> $map-btm-off-m in '_anhalt_map.scss'
+$map-footer-btm-m: 9rem; // keep same height as height to remove from map --> $map-btm-off-m in '_anhalt_map.scss'
 $map-footer-btm-s: 6.5rem; // keep same height as height to remove from map --> $map-btm-off-s in '_anhalt_map.scss'
 
 footer.map-footer {
@@ -37,7 +37,7 @@ footer.map-footer {
     a {
 
       @include breakpoint(medium) {
-        line-height: $map-footer-btm-m;
+        line-height: 8rem;
       }
     }
   }

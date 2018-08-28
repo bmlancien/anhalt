@@ -7,6 +7,7 @@ import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
+import './lib/footer-toggle';
 import './lib/jquery-ui';
 import './lib/leaflet-map';
 import './lib/radio-btn-checked';
