@@ -222,6 +222,10 @@ $card-medium-icon-hover-color: lighten($card-medium-icon-color, 15%);
     }
   }
 
+  .input-group-button {
+    margin-top: .3rem;
+  }
+
   .button {
     padding-left: .4rem;
     padding-right: .4rem;
