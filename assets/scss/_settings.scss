@@ -758,17 +758,17 @@ $slider-radius: $global-radius;
 // 49. Switch
 // ----------
 
-$switch-background: $medium-gray;
-$switch-background-active: $primary-color;
+$switch-background: $grey-3;
+$switch-background-active: $color-sec-1;
 $switch-height: 2rem;
-$switch-height-tiny: 1.5rem;
+$switch-height-tiny: 1.25rem;
 $switch-height-small: 1.75rem;
 $switch-height-large: 2.5rem;
-$switch-radius: $global-radius;
+$switch-radius: 100px;
 $switch-margin: $global-margin;
 $switch-paddle-background: $white;
 $switch-paddle-offset: 0.25rem;
-$switch-paddle-radius: $global-radius;
+$switch-paddle-radius: 100px;
 $switch-paddle-transition: all 0.25s ease-out;
 
 // 50. Table
