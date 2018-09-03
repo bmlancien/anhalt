@@ -89,7 +89,6 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
       float: left;
 
       @include breakpoint(medium) {
-        height: 1.875rem;
         float: none;
       }
     }
@@ -122,6 +121,26 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   .tabs-content {
     background-color: $grey-1;
     border: none;
+  }
+}
+
+// Tabs icons
+#tabs-icon {
+
+  &--scenarios {
+    height: 1.5rem;
+  }
+
+  &--energy {
+    height: 1.875rem;
+  }
+
+  &--areas {
+    height: 1.5rem;
+  }
+
+  &--results {
+    height: 1.5rem;
   }
 }
 
