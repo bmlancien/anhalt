@@ -7,7 +7,7 @@ $('#footer--hide').click(function() {
   if (!footerHidden) {
 
     $('.map-footer').animate({height: '2rem'}, 200, 'swing');
-    $('#mapid').animate({height: 'calc(100% - 2rem)'}, 200, 'swing');
+    $('#mapid').height('calc(100% - 2rem)');
     $('#footer-legal').css('display', 'none');
     $('#footer-logos').css('display', 'none');
 
