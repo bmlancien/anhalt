@@ -6,19 +6,23 @@ $('#footer--hide').click(function() {
 
   if (!footerHidden) {
 
-    $('.map-footer').animate({height: '2rem'}, 200, 'swing');
-    $('#mapid').height('calc(100% - 2rem)');
+    $('.map-footer').height('2.5rem');
+    $('#mapid').height('calc(100% - 2.5rem)');
     $('#footer-legal').css('display', 'none');
     $('#footer-logos').css('display', 'none');
+
+    $("#footer--hide__icon").replaceWith("<i class=\"icon ion-chevron-up\" id=\"footer--hide__icon\"></i>");
 
     footerHidden = true;
 
   } else {
 
-    $('.map-footer').animate({height: '9rem'}, 200, 'swing');
-    $('#mapid').height('calc(100% - 9rem)');
+    $('.map-footer').height('8rem');
+    $('#mapid').height('calc(100% - 8rem)');
     $('#footer-legal').css('display', 'block');
     $('#footer-logos').css('display', 'block');
+
+    $("#footer--hide__icon").replaceWith("<i class=\"icon ion-chevron-down\" id=\"footer--hide__icon\"></i>");
 
     footerHidden = false;
   }
