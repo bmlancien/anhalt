@@ -12,6 +12,8 @@ import './lib/jquery-ui';
 import './lib/leaflet-map';
 import './lib/radio-btn-checked';
 
+import './lib/ion-range-slider';
+
 $(document).foundation();
 
 // forces offcanvas to open when page has loaded
