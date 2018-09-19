@@ -39,7 +39,7 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
 // -------------------------------- Tabs -------------------------------------- //
 .off-canvas .offcanvas-tabs__wrapper {
   @include breakpoint(medium) {
-    width: 7.8125rem;
+    width: 5rem;
   }
 }
 
@@ -116,6 +116,7 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   .tabs-content__wrapper {
     min-height: calc(100vh - #{$canvas-top-off-m});
     background-color: $grey-1;
+    width: 30rem;
   }
 
   .tabs-content {
