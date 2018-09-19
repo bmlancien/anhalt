@@ -66,13 +66,10 @@
 }
 
 .irs-min, .irs-max {
-    color: $grey-dark;
+    color: $color-1;
     font-size: .875rem; line-height: 1.333;
     text-shadow: none;
     top: 10px; padding: 1px 3px;
-    background: rgba(0,0,0,0.1);
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 .lt-ie9 .irs-min, .lt-ie9 .irs-max {
     background: #ccc;
