@@ -32,17 +32,16 @@
                       <h2>Flächen</h2>
                     </a>
                   </li>
-                  <li class="tabs-title">
+                  <li class="tabs-title" id="tabsResults">
                     <a href="#panel-results">
                       <img src="assets/img/icons_custom/Enavi_Results_w.svg" id="tabs-icon--results">
                       <h2>Ergebnisse</h2>
                     </a>
                   </li>
                 </ul>
-        
               </div>
-              <div class="cell small-9 medium-10 medium-cell-block-y tabs-content__wrapper">
-                  <div class="tabs-content" data-tabs-content="offcanvas-tabs">
+              <div class="cell small-9 medium-10 medium-cell-block-y tabs-content__wrapper" id="offCanvasContent">
+                  <div class="tabs-content" data-tabs-content="offcanvas-tabs" id="offcanvasTabs">
 
                     <!-- First panel content -->
                     <div class="tabs-panel is-active" id="panel-scenarios">
@@ -67,7 +66,7 @@
                       </form>
                       <div class="panel__text panel__text--highlighted">
                         <p id="scenarioPanelText">
-                            <span style="font-weight:700">Status Quo</span><span style="display:inline-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                          <span style="font-weight:700">Status Quo</span><span style="display:inline-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
                         </p>
                       </div>
                     </div>
@@ -115,8 +114,9 @@
       
                     <!-- Fourth panel content -->
                     <div class="tabs-panel" id="panel-results">
-                      <p>Four</p>
-                      <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+                      <button type="button" id="btnExpand">
+                        Expand
+                      </button>
                     </div>
                   </div>
 
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <button class="close-button" aria-label="Close menu" type="button" data-close id="btnCloseOffcanvas">
           <span aria-hidden="true">&times;</span>
         </button>
 
