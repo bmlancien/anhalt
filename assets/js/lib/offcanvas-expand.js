@@ -13,6 +13,14 @@ var offCanvasOpacity = function(op, duration) {
   $('.tabs-panel').animate({opacity: op}, duration);
 }
 
+var btnExpandText = function(expanded) {
+  if (expanded) {
+    $('#btnExpand').html('Weniger Ergebnisse <i class ="icon ion-chevron-left icon--small"></i>');
+  } else {
+    $('#btnExpand').html('Mehr Ergebnisse <i class ="icon ion-chevron-right icon--small"></i>');
+  }
+}
+
 // expands or reduces off-canvas
 $('#btnExpand').on('click', function() {
     
@@ -24,6 +32,9 @@ $('#btnExpand').on('click', function() {
     toggleWidth('35rem', '30rem');
     expanded= false;
   }
+
+  // changes btn text
+  btnExpandText(expanded);
 })
 
 // makes sure that clicking on another tab will reduce the off-canvas width if the off-canvas is expanded to 100%
