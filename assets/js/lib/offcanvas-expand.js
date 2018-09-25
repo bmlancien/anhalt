@@ -3,27 +3,25 @@ import $ from 'jquery';
 
 var expanded = false;
 
+var toggleWidth = function(offCanvasWidth, offCanvasContentWidth, visibility) {
+  $('#offCanvas').width(offCanvasWidth);
+  $('#offCanvasContent').width(offCanvasContentWidth);
+  $('#btnCloseOffcanvas').css('visibility', visibility);
+}
+
 $('#btnExpand').on('click', function() {
     
   if (!expanded) {
-    $('#offCanvas').width('100%');
-    $('#offCanvasContent').width('100%');
-    $('#btnCloseOffcanvas').css('visibility', 'hidden');
-
+    toggleWidth('100%', '100%', 'hidden');
     expanded= true;
 
   } else {
-    $('#offCanvas').width('35rem');
-    $('#offCanvasContent').width('30rem');
-    $('#btnCloseOffcanvas').css('visibility', 'visible');
-
+    toggleWidth('35rem', '30rem', 'visible');
     expanded= false;
   }
 })
 
-
 $("[data-tabs]").on('change.zf.tabs', function(event){
-    $('#offCanvas').width('35rem');
-    $('#offCanvasContent').width('30rem');
-    $('#btnCloseOffcanvas').css('visibility', 'visible');
-})
+  toggleWidth('35rem', '30rem', 'visible');
+});
+
