@@ -15,9 +15,9 @@ var offCanvasOpacity = function(op, duration) {
 
 var btnExpandText = function(expanded) {
   if (expanded) {
-    $('#btnExpand').html('Weniger Ergebnisse <i class ="icon ion-chevron-left icon--small"></i>');
+    $('#btnExpand').html('Weniger Ergebnisse <i class ="icon ion-android-remove icon--small"></i>');
   } else {
-    $('#btnExpand').html('Mehr Ergebnisse <i class ="icon ion-chevron-right icon--small"></i>');
+    $('#btnExpand').html('Mehr Ergebnisse <i class ="icon ion-android-add icon--small"></i>');
   }
 }
 
@@ -49,9 +49,6 @@ $("[data-tabs]").on('change.zf.tabs', function(){
 // makes sure all elements fade away
 $('#btnCloseOffcanvas').on('click', function(){
   offCanvasOpacity(0, 500);
-
-  // changes btn text if needed
-  btnExpandText(false);
 });
 
 // makes sure all faded elements become visible when opening off-canvas
