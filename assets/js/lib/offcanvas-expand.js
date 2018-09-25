@@ -21,7 +21,7 @@ var btnExpandText = function(expanded) {
   }
 }
 
-// expands or reduces off-canvas
+// expands or reduces off-canvas width
 $('#btnExpand').on('click', function() {
     
   if (!expanded) {
@@ -40,12 +40,18 @@ $('#btnExpand').on('click', function() {
 // makes sure that clicking on another tab will reduce the off-canvas width if the off-canvas is expanded to 100%
 $("[data-tabs]").on('change.zf.tabs', function(){
   toggleWidth('35rem', '30rem');
+
+  // changes btn text if needed
+  btnExpandText(false);
 });
 
 // some elements were not disappearing completely when clicking on expanded off-canvas close button (x)
 // makes sure all elements fade away
 $('#btnCloseOffcanvas').on('click', function(){
   offCanvasOpacity(0, 500);
+
+  // changes btn text if needed
+  btnExpandText(false);
 });
 
 // makes sure all faded elements become visible when opening off-canvas
