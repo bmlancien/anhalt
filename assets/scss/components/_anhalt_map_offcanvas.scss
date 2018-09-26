@@ -1,6 +1,12 @@
 $canvas-top-off-s: 2rem; // same as $top-bar-height-s in '_anhalt_navigation.scss'
 $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.scss'
 
+#offCanvas {
+  @include breakpoint(medium) {
+    overflow-y: hidden;
+  }
+}
+
 .off-canvas-wrapper {
   height: calc(100% - #{$canvas-top-off-s});
 
