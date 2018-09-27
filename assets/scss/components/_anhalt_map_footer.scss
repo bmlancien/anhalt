@@ -89,6 +89,10 @@ footer.map-footer {
 
 .map-footer #footer--hide {
 
+  @include breakpoint(medium) {
+    height: 0;
+  }
+
   &__icon {
     color: $color-1;
     cursor: pointer;
