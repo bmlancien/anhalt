@@ -17,25 +17,25 @@
                   <li class="tabs-title is-active">
                     <a href="#panel-scenarios" aria-selected="true">
                       <img src="assets/img/icons_custom/Enavi_Scenario_w.svg" id="tabs-icon--scenarios">
-                      <h2>Szenario</h2>
+                      <h2 class="tabs-title__head">Szenario</h2>
                     </a>
                   </li>
                   <li class="tabs-title">
                     <a href="#panel-energy">
                       <img src="assets/img/icons_custom/Enavi_Energy_w.svg" id="tabs-icon--energy">
-                      <h2 style="padding-top: .2rem;">Energie-<br>system</h2>
+                      <h2 class="tabs-title__head tabs-title__head--long">Energie-<br>system</h2>
                     </a>
                   </li>
                   <li class="tabs-title">
                     <a href="#panel-areas">
                       <img src="assets/img/icons_custom/Enavi_Layers_w.svg" id="tabs-icon--areas">
-                      <h2>Flächen</h2>
+                      <h2 class="tabs-title__head">Flächen</h2>
                     </a>
                   </li>
                   <li class="tabs-title" id="tabsResults">
                     <a href="#panel-results">
                       <img src="assets/img/icons_custom/Enavi_Results_w.svg" id="tabs-icon--results">
-                      <h2>Ergebnisse</h2>
+                      <h2 class="tabs-title__head">Ergebnisse</h2>
                     </a>
                   </li>
                 </ul>
@@ -64,9 +64,10 @@
                         </div>
                       </fieldset>
                     </form>
-                    <div class="panel__text panel__text--highlighted">
+                    <div class="panel-desc panel-desc--highlighted">
                       <p id="scenarioPanelText">
-                        <span style="font-weight:700">Status Quo</span><span style="display:inline-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                        <span class="panel-desc__header">Status Quo</span>
+                        <span class="panel-desc__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
                       </p>
                     </div>
                   </div>
@@ -157,8 +158,8 @@
     <footer class="map-footer">
       <div class="grid-x">
 
-        <div class="cell u-text--center" id="footer--hide" style="color: black; height: 1rem; position: absolute;">
-          <div style="margin: 0;">
+        <div class="cell u-text--center" id="footer--hide">
+          <div>
             <i class="icon ion-chevron-down" id="footer--hide__icon"></i>
           </div>
         </div>

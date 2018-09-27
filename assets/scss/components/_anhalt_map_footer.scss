@@ -87,7 +87,10 @@ footer.map-footer {
   }
 }
 
-.map-footer #footer--hide__icon {
-  color: $color-1;
-  cursor: pointer;
+.map-footer #footer--hide {
+
+  &__icon {
+    color: $color-1;
+    cursor: pointer;
+  }
 }
