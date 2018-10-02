@@ -67,3 +67,61 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+// Radio control
+.control {
+	display: block;
+	position: relative;
+	padding-left: 2rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 1.25rem;
+	width: 1.25rem;
+	background: $grey-3;
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: $grey-3;
+}
+
+.control input:checked ~ .control__indicator {
+	background: $color-sec-1;
+}
+
+.control__indicator:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+.control--radio .control__indicator:after {
+	left: 7px;
+	top: 7px;
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: $white;
+}
