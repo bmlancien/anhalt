@@ -45,25 +45,29 @@
 
                   <!-- First panel content -->
                   <div class="tabs-panel is-active" id="panel-scenarios">
-                    <form>
-                      <fieldset>
-                        <legend>Szenario auswählen 
-                          <i class ="icon ion-information-circled icon--small" title="Informationen zum Inhalt"></i>
-                        </legend>
-                        <div>
-                          <input type="radio" name="scenario" value="statusQuo" id="scenarioStatusQuo" required checked>
-                          <label for="scenarioStatusQuo">Status Quo</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="scenario" value="germany" id="scenarioGermany">
-                          <label for="scenarioGermany">Deutsches Klimaschutzziel</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="scenario" value="100" id="scenario100">
-                          <label for="scenario100">100% EE in der Region</label>
-                        </div>
-                      </fieldset>
-                    </form>
+                    <div class="grid-x">
+                      <div class="cell">
+                        <form>
+                          <fieldset>
+                            <legend>Szenario auswählen 
+                              <i class ="icon ion-information-circled icon--small" title="Informationen zum Inhalt"></i>
+                            </legend>
+                            <label class="control control--radio">Status Quo
+                              <input type="radio" name="scenario" value="statusQuo" id="scenarioStatusQuo" required checked="checked"/>
+                              <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Deutsches Klimaschutzziel
+                              <input type="radio" name="scenario" value="germany" id="scenarioGermany"/>
+                              <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">100% EE in der Region
+                              <input type="radio" name="scenario" value="100" id="scenario100"/>
+                              <div class="control__indicator"></div>
+                            </label>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
                     <div class="panel-desc panel-desc--highlighted">
                       <p id="scenarioPanelText">
                         <span class="panel-desc__header">Status Quo</span>
