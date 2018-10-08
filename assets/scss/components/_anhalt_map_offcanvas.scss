@@ -224,14 +224,3 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
 #btnExpand {
   width: 14rem;
 }
-
-// simulation and save btns
-#simulation-save-btn {
-  position: fixed; 
-  bottom: 0; 
-  width: 100%; 
-  text-align: center; 
-  background-color: rgba(255,255,255,.4); 
-  padding-top: 1rem; 
-  z-index: 999999999999999999;
-}
