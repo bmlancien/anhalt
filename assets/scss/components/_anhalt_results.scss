@@ -1,0 +1,16 @@
+#results-wrap {
+
+  @include breakpoint(medium) {
+    width: 92%;
+  }
+
+  li {
+    width: 20%;
+    border-top: 0;
+
+    a {
+      color: $grey-1;
+      height: 4rem;
+    }
+  }
+}
