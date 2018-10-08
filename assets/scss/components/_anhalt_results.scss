@@ -1,8 +1,6 @@
 #results-wrap {
 
-  @include breakpoint(medium) {
-    width: 92%;
-  }
+  margin-top: 2rem;
 
   .tabs {
     background-color: transparent;
@@ -19,7 +17,11 @@
 
     a {
       color: $grey-1;
-      height: 4rem;
+      height: 3.5rem;
     }
   }
+}
+
+#panel-results.tabs-panel.is-active {
+  width: calc(100% - 5rem);
 }
