@@ -165,6 +165,11 @@
     background-color: $grey-3;
     color: $grey-dark;
     cursor: default;
+    
+    &:hover {
+        background-color: $grey-3;
+        color: $grey-dark;
+    }
 }
 
 // remove outline
