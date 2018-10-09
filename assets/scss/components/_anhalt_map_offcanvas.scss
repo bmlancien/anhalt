@@ -44,6 +44,8 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
 
 // -------------------------------- Tabs -------------------------------------- //
 .off-canvas .offcanvas-tabs__wrapper {
+  margin-top: 2px;
+
   @include breakpoint(medium) {
     width: 5rem;
   }

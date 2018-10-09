@@ -29,6 +29,7 @@
   li {
     width: 20%;
     border-top: 0;
+    letter-spacing: .5px;
 
     a {
       color: $grey-1;
@@ -41,7 +42,7 @@
   width: calc(100% - 5rem);
 
   a, a:link {
-    background-color: $grey-2;
+    background-color: $color-sec-1;
     color: $color-1;
   }
 
