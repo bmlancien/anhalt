@@ -32,4 +32,11 @@
       }
     }
   }
+
+  .table__body {
+
+    &--text-top {
+      vertical-align: top;
+    }
+  }
 }
