@@ -12,7 +12,6 @@ import './lib/jquery-ui';
 import './lib/leaflet-map';
 import './lib/offcanvas-expand';
 import './lib/radio-btn-checked';
-import './lib/highcharts-results';
 
 import './lib/ion-range-slider';
 
