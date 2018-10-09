@@ -11,6 +11,21 @@
     font-weight: 700;
   }
 
+  .tabs-title.is-active a {
+    background-color: $color-2!important;
+    color: $grey-1!important;
+  }
+
+  ul li:first-child a {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  ul li:last-child a {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
   li {
     width: 20%;
     border-top: 0;
@@ -24,4 +39,19 @@
 
 #panel-results.tabs-panel.is-active {
   width: calc(100% - 5rem);
+
+  a, a:link {
+    background-color: $grey-2;
+    color: $color-1;
+  }
+
+  a:hover {
+    background-color: $color-2;
+    color: $grey-1;
+  }
+
+  a:focus {
+    background-color: $color-2;
+    color: $grey-1;
+  }
 }
