@@ -1,0 +1,35 @@
+.table {
+
+  .table__head--color {
+    background-color: $color-2;
+    color: $grey-1;
+  }
+
+  th.table__h {
+
+    &--small {
+      width: 15%;
+    }
+
+    &--medium {
+      width: 30%;
+    }
+
+    &--large {
+      width: 55%;
+    }
+  }
+
+  .table__list {
+
+    li a {
+      color: $color-2;
+      transition: color 0.2s ease-in;
+      font-weight: 400;
+
+      &:hover {
+        color: darken($color-2, 15%);
+      }
+    }
+  }
+}
