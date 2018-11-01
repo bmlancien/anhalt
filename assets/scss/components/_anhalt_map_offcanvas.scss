@@ -42,6 +42,13 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   }
 }
 
+// fix offcanvas height bug on firefox 
+@-moz-document url-prefix() {
+  .off-canvas-wrapper .off-canvas.position-left {
+    height: 100%;
+  }
+}
+
 // -------------------------------- Tabs -------------------------------------- //
 .off-canvas .offcanvas-tabs__wrapper {
 

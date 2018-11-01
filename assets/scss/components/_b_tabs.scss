@@ -57,3 +57,52 @@ button[type="button"].tabs-btn--right {
     border-radius: 0 100px 100px 0;
   }
 } 
+
+// tabs in offcanvas
+#scenarios-wrap,
+#results-wrap {
+
+  margin-top: 1.55rem;
+
+  .tabs {
+    background-color: transparent;
+  }
+
+  .tabs-title a {
+    font-size: .875rem;
+    font-weight: 700;
+  }
+
+  .tabs-title.is-active a {
+    background-color: $color-2!important;
+    color: $grey-1!important;
+  }
+
+  ul li:first-child a {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  ul li:last-child a {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  li {
+    border-top: 0;
+    letter-spacing: .5px;
+
+    a {
+      color: $grey-1;
+      height: 3.5rem;
+    }
+  }
+}
+
+#scenarios-wrap li {
+  width: 50%;
+}
+
+#results-wrap li {
+  width: 20%;
+}
