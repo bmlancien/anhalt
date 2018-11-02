@@ -8,6 +8,7 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './lib/footer-toggle';
+import './lib/highlight-tab';
 import './lib/jquery-ui';
 import './lib/leaflet-map';
 import './lib/offcanvas-expand';

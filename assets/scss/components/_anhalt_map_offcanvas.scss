@@ -133,6 +133,13 @@ $canvas-top-off-m: 2.5rem; // same as $top-bar-height-m in '_anhalt_navigation.s
   }
 }
 
+// Define style of results tab after the model has been calculated
+// JS toggles class
+.off-canvas-wrapper.off-canvas-wrapper--left li.tabs-title.is-active a.results-highlighted,
+.off-canvas-wrapper.off-canvas-wrapper--left li.tabs-title a.results-highlighted {
+  background-color: $color-sec-2;
+}
+
 // Tabs content
 .off-canvas-wrapper .off-canvas {
 
